@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_de_Android.Views.MainPage"
+             BackgroundColor="#ff7220">
+    
+
+    <StackLayout Padding="30" VerticalOptions="Center">
+
+        <!-- Label -->
+        <Label Text="Freshbasket" FontSize="60" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Black"/>
+        <BoxView HeightRequest="10" />
+
+        <!-- Label -->
+        <Label Text="Bienvenido" FontSize="30" HorizontalOptions="Center" TextColor="Black"/>
+        <BoxView HeightRequest="10"/>
+
+        <!-- Label -->
+        <Label Text="Inicia sesión para continuar" FontSize="18" TextColor="Black"/>
+
+        <!-- Username Entry -->
+        <Frame BackgroundColor="White" CornerRadius="5" Padding="5" HasShadow="True">
+            <Entry x:Name="UsernameEntry" Placeholder="Username" PlaceholderColor="Gray" TextColor="Black"/>
+        </Frame>
+
+        <!-- Add some space -->
+        <BoxView HeightRequest="10" />
+
+        <!-- Password Entry -->
+        <Frame BackgroundColor="White" CornerRadius="5" Padding="5" HasShadow="True">
+            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" PlaceholderColor="Gray" TextColor="Black"/>
+        </Frame>
+
+        <!-- Add some space -->
+        <BoxView HeightRequest="60" />
+
+        <!-- Login Button -->
+        <Button Text="Iniciar sesión" Clicked="OnLoginClicked" Padding="15" CornerRadius="5" TextColor="Black" FontSize="25">
+            <Button.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="TextTransform" Value="None" />
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <!-- Error Message Label -->
+        <Label x:Name="ErrorMessage" TextColor="Red" IsVisible="False" />
+
+    </StackLayout>
+    
+</ContentPage>
+    

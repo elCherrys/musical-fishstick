@@ -1,0 +1,16 @@
+C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.csproj.AssemblyReference.cache
+C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.AssemblyInfoInputs.cache
+C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.AssemblyInfo.cs
+C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.csproj.CoreCompileInputs.cache
+C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.dll
+C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android\obj\Debug\netstandard2.0\refint\App de Android.dll
+C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.pdb
+C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android\bin\Debug\netstandard2.0\App de Android.deps.json
+C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android\bin\Debug\netstandard2.0\App de Android.dll
+C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android\bin\Debug\netstandard2.0\ref\App de Android.dll
+C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android\bin\Debug\netstandard2.0\App de Android.pdb
+C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
+C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs

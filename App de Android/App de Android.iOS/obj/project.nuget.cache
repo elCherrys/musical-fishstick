@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "6bqY6NDFIeQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Qizi\\source\\repos\\App de Android\\App de Android\\App de Android.iOS\\App de Android.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Qizi\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Qizi\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Qizi\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}
