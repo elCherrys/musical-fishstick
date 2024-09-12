@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uyYIF0dmJpw=",
+  "dgSpecHash": "ritCjWoBMgc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Qizi\\source\\repos\\App de Android\\App de Android\\App de Android.Android\\App de Android.Android.csproj",
+  "projectFilePath": "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android.Android\\App de Android.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Qizi\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Qizi\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",

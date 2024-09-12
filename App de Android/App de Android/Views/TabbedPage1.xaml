@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:loclas="clr-namespace:App_de_Android.Views"
+            
+            x:Class="App_de_Android.Views.TabbedPage1"
+            Title="TabbedPage1"
+            BarBackgroundColor="White"
+            >
+    <!--Pages can be added as references or inline-->
+
+    <loclas:Page2 Title="Tab 3" />
+</TabbedPage>

@@ -23,7 +23,7 @@ namespace App_de_Android.Views
             // Simple login logic
             if (username == "admin" && password == "password123")
             {
-                await Navigation.PushAsync(new Views.Home());
+                await Navigation.PushAsync(new Views.TabbedPage1());
             }
             else
             {

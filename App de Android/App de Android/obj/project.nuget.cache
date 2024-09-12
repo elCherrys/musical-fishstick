@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yUBbalsrBeg=",
+  "dgSpecHash": "lIG6PHnWgxU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Qizi\\source\\repos\\App de Android\\App de Android\\App de Android\\App de Android.csproj",
+  "projectFilePath": "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Qizi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Qizi\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
