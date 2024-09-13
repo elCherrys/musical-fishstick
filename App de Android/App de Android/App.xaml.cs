@@ -10,7 +10,7 @@ namespace App_de_Android
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Views.MainPage());
+            MainPage = new NavigationPage(new Views.LoginScreen());
 
         }
 

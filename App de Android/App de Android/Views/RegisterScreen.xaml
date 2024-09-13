@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_de_Android.Views.RegisterScreen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Register"/>
+            <Label Text="Enter your details to register"/>
+            <Entry x:Name="UsernameEntry" Placeholder="Username"/>
+            <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email" TextChanged="EmailValidation"/>
+            <Label x:Name="InvalidEmailLabel" TextColor="Red" IsVisible="False" Text="Invalid Email"/>
+            <Entry x:Name="PasswordEntry" Placeholder="Confirm Password" IsPassword="True" TextChanged="PasswordComparison"/>
+            <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm Password" IsPassword="True" TextChanged="PasswordComparison"/>
+            <Label x:Name="PasswordsMatchLabel" TextColor="Red" IsVisible="False" Text="Passwords Don't MAtch"/>
+            <Button Text="Register" Clicked="RegisterUser"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -21,7 +21,6 @@ C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstand
 C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.pdb
 C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
-C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\TabbedPage1.xaml.g.cs
 C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.AssemblyInfoInputs.cache
 C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.AssemblyInfo.cs
@@ -31,5 +30,8 @@ C:\Freshasket\musical-fishstick\App de Android\App de Android\bin\Debug\netstand
 C:\Freshasket\musical-fishstick\App de Android\App de Android\bin\Debug\netstandard2.0\App de Android.dll
 C:\Freshasket\musical-fishstick\App de Android\App de Android\bin\Debug\netstandard2.0\ref\App de Android.dll
 C:\Freshasket\musical-fishstick\App de Android\App de Android\bin\Debug\netstandard2.0\App de Android.pdb
-C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\Page2.xaml.g.cs
 C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\ForgotPassword.xaml.g.cs
+C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\LoginScreen.xaml.g.cs
+C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\pipi.xaml.g.cs
+C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\RegisterScreen.xaml.g.cs
