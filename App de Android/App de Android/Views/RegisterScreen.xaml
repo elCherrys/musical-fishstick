@@ -6,13 +6,17 @@
         <StackLayout>
             <Label Text="Register"/>
             <Label Text="Enter your details to register"/>
-            <Entry x:Name="UsernameEntry" Placeholder="Username"/>
-            <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email" TextChanged="EmailValidation"/>
+            <Entry x:Name="UsernameEntry" Placeholder="Username" TextChanged="EvaluateForm"/>
+            <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email" TextChanged="EvaluateForm"/>
             <Label x:Name="InvalidEmailLabel" TextColor="Red" IsVisible="False" Text="Invalid Email"/>
-            <Entry x:Name="PasswordEntry" Placeholder="Confirm Password" IsPassword="True" TextChanged="PasswordComparison"/>
-            <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm Password" IsPassword="True" TextChanged="PasswordComparison"/>
-            <Label x:Name="PasswordsMatchLabel" TextColor="Red" IsVisible="False" Text="Passwords Don't MAtch"/>
-            <Button Text="Register" Clicked="RegisterUser"/>
+            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" TextChanged="EvaluateForm" />
+            <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm Password" IsPassword="True" TextChanged="EvaluateForm" />
+            <Label x:Name="PasswordsMatchLabel" TextColor="Red" IsVisible="False" Text="Passwords Don't Match"/>
+            <Label x:Name="PasswordLengthLabel" TextColor="Red" IsVisible="False" Text="Password must be longer than 6 characters"/>
+            <Label x:Name="PasswordUppercaseLabel" TextColor="Red" IsVisible="False" Text="Password must contain at least one uppercase letter"/>
+            <Label x:Name="PasswordLowercaseLabel" TextColor="Red" IsVisible="False" Text="Password must contain at least one lowercase letter"/>
+            <Label x:Name="PasswordNumberLabel" TextColor="Red" IsVisible="False" Text="Password must contain at least one number"/>
+            <Button x:Name="RegisterButton" Text="Register" Clicked="RegisterUser" IsEnabled="False"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
