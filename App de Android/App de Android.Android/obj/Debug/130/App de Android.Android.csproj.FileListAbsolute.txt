@@ -639,11 +639,6 @@ C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android.Android\
 C:\Users\Qizi\source\repos\App de Android\App de Android\App de Android.Android\obj\Debug\130\android\src\crc64e9085c93f1b6da02\CustomEntryRenderer.java
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\bin\Debug\App de Android.Android.dll
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\bin\Debug\App de Android.Android.pdb
-C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\bin\Debug\com.companyname.app_de_android.apk
-C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\bin\Debug\com.companyname.app_de_android.aab
-C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\bin\Debug\com.companyname.app_de_android-Signed.aab
-C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\bin\Debug\com.companyname.app_de_android-Signed.apk
-C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\bin\Debug\com.companyname.app_de_android-Signed.apk.idsig
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\bin\Debug\App de Android.dll
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\bin\Debug\App de Android.pdb
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\MonoAndroid,Version=v13.0.AssemblyAttributes.cs
@@ -682,10 +677,7 @@ C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\App de A.8ED3DEC4.Up2Date
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\App de Android.Android.dll
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\App de Android.Android.pdb
-C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\bin\com.companyname.app_de_android.apk
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\bin\base.zip
-C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\bin\com.companyname.app_de_android.aab
-C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\bin\com.companyname.app_de_android.apks
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\res\values\styles.xml
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\res\values\colors.xml
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\res\mipmap-anydpi-v26\icon.xml
@@ -1238,7 +1230,6 @@ C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\src\mono\MonoPackageManager_Resources.java
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\src\xamarin\essentials\fileProvider.java
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\bin\packaged_resources
-C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\src\com\companyname\app_de_android\R.java
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\compressed_assemblies.arm64-v8a.ll
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\compressed_assemblies.armeabi-v7a.ll
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\compressed_assemblies.x86.ll
@@ -1276,3 +1267,23 @@ C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\bin\Debug\com.companyname.freshbasket.apk
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\bin\Debug\com.companyname.freshbasket.aab
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\bin\Debug\com.companyname.freshbasket-Signed.aab
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\bin\Debug\com.companyname.freshbasket-Signed.apk
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\bin\Debug\com.companyname.freshbasket-Signed.apk.idsig
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\bin\com.companyname.freshbasket.apk
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\bin\com.companyname.freshbasket.aab
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\bin\com.companyname.freshbasket.apks
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\Firebase.Auth.dll
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\Newtonsoft.Json.dll
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\src\com\companyname\freshbasket\R.java
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Collections.dll
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Diagnostics.Debug.dll
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Linq.dll
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Reflection.dll
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Reflection.Extensions.dll
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Runtime.Serialization.Primitives.dll
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Text.Encoding.dll
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Threading.dll
+C:\Freshasket\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Threading.Tasks.dll

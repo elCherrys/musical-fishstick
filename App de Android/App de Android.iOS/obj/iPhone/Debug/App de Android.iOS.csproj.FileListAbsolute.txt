@@ -124,3 +124,5 @@ C:\Freshasket\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Deb
 C:\Freshasket\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\App de A.40F747D2.Up2Date
 C:\Freshasket\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\App de Android.iOS.exe
 C:\Freshasket\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\App de Android.iOS.pdb
+C:\Freshasket\musical-fishstick\App de Android\App de Android.iOS\bin\iPhone\Debug\Firebase.Auth.dll
+C:\Freshasket\musical-fishstick\App de Android\App de Android.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll

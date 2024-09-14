@@ -4,7 +4,9 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "App de Android.Android.dll" comes first in this list. */
 		"App de Android.Android.dll",
 		"App de Android.dll",
+		"Firebase.Auth.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

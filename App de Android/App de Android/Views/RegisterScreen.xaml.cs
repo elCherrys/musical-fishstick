@@ -40,10 +40,21 @@ namespace App_de_Android.Views
             bool hasLowercase = Regex.IsMatch(password, @"[a-z]");
             bool hasDigit = Regex.IsMatch(password, @"\d");
             // Show or hide password complexity labels
-            PasswordLengthLabel.IsVisible = !isPasswordLongEnough;
-            PasswordUppercaseLabel.IsVisible = !hasUppercase;
-            PasswordLowercaseLabel.IsVisible = !hasLowercase;
-            PasswordNumberLabel.IsVisible = !hasDigit;
+            if (!string.IsNullOrEmpty(password))
+            {
+                PasswordLengthLabel.IsVisible = !isPasswordLongEnough;
+                PasswordUppercaseLabel.IsVisible = !hasUppercase;
+                PasswordLowercaseLabel.IsVisible = !hasLowercase;
+                PasswordNumberLabel.IsVisible = !hasDigit;
+            }
+            else
+            {
+                // Hide the labels if no password is being entered
+                PasswordLengthLabel.IsVisible = false;
+                PasswordUppercaseLabel.IsVisible = false;
+                PasswordLowercaseLabel.IsVisible = false;
+                PasswordNumberLabel.IsVisible = false;
+            }
             //Check if passwords match
             bool isPasswordValid = isPasswordLongEnough && hasUppercase && hasLowercase && hasDigit;
             bool passwordsMatch = password == confirmPassword;

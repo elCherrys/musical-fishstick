@@ -18,20 +18,20 @@
         <!-- Login Label -->
         <Label Text="Inicia sesión para continuar" FontSize="18" TextColor="Black"/>
 
-        <!-- Username Entry -->
+        <!-- Email Entry -->
         <Frame BackgroundColor="White" CornerRadius="5" Padding="5" HasShadow="True">
-            <Entry x:Name="UsernameEntry" Placeholder="Username" PlaceholderColor="Gray" TextColor="Black"/>
+            <Entry x:Name="EmailEntry" Placeholder="Username" PlaceholderColor="Gray" TextColor="Black" TextChanged="OnTextChanged"/>
         </Frame>
         <BoxView HeightRequest="10" />
 
         <!-- Password Entry -->
         <Frame BackgroundColor="White" CornerRadius="5" Padding="5" HasShadow="True">
-            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" PlaceholderColor="Gray" TextColor="Black"/>
+            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" PlaceholderColor="Gray" TextColor="Black" TextChanged="OnTextChanged"/>
         </Frame>
         <BoxView HeightRequest="60" />
 
         <!-- Login Button -->
-        <Button Text="Iniciar sesión" Clicked="OnLoginClicked" Padding="15" CornerRadius="5" TextColor="Black" FontSize="25">
+        <Button x:Name="LoginButton" Text="Iniciar sesión" Clicked="OnLoginClicked" Padding="15" CornerRadius="5" TextColor="Black" FontSize="25" IsEnabled="False">
             <Button.Resources>
                 <Style TargetType="Button">
                     <Setter Property="TextTransform" Value="None" />
@@ -59,4 +59,7 @@
     </StackLayout>
     
 </ContentPage>
-    
+
+
+
+
