@@ -1,5 +1,8 @@
 ﻿using Firebase.Auth;
+using Newtonsoft.Json;
 using System;
+using System.Net.Http;
+using System.Text;
 using System.Text.RegularExpressions;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -66,20 +69,40 @@ namespace App_de_Android.Views
 
         private async void RegisterUser(object sender, EventArgs e)
         {
-            string WebApiKey = Key.GetApiKey();
+            string apiUrl = "https://myowndomain.lol:5001/api/Auth/register";  // Replace with your actual API URL
+
+            var httpClient = new HttpClient();
+            var registerModel = new
+            {
+                email = EmailEntry.Text.ToString(),
+                password = PasswordEntry.Text.ToString()
+            };
 
             try
             {
-                var authProvider = new FirebaseAuthProvider(new FirebaseConfig(WebApiKey));
-                var auth = await authProvider.CreateUserWithEmailAndPasswordAsync(EmailEntry.Text.ToString(), PasswordEntry.Text.ToString());
-                string gettoken = auth.FirebaseToken;
+                // Convert to json
+                var json = JsonConvert.SerializeObject(registerModel);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                await Navigation.PopAsync();
+                // Send the POST request
+                var response = await httpClient.PostAsync(apiUrl, content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    await Navigation.PopAsync();
+                }
+                else
+                {
+                    // Handle error responses
+                    var errorMessage = await response.Content.ReadAsStringAsync();
+                    await DisplayAlert("Error", $"Failed to register user: {errorMessage}", "OK");
+                }
             }
-            catch
+            catch (Exception ex)
             {
-                await DisplayAlert("Error", "Failed to register user. Please try again.", "OK");
+                await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
             }
         }
+
     }
 }

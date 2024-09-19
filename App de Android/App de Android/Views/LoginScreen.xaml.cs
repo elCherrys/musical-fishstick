@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using Firebase.Auth;
 using Newtonsoft.Json;
 using Xamarin.Essentials;
+using System.Net.Http;
 
 namespace App_de_Android.Views
 { public partial class LoginScreen : ContentPage
@@ -20,27 +21,41 @@ namespace App_de_Android.Views
 
         private async void OnLoginClicked(object sender, EventArgs e)
         {
-            string username = EmailEntry.Text;
-            string password = PasswordEntry.Text;
+            string apiUrl = "https://myowndomain.lol:5001/api/Auth/login";  // Replace with your actual API URL
 
-            string WebApiKey = Key.GetApiKey();
-            var authProvider = new FirebaseAuthProvider(new FirebaseConfig(WebApiKey));
-           
-            //login logic
+            var httpClient = new HttpClient();
+            var loginModel = new
+            {
+                email = EmailEntry.Text.ToString(),
+                password = PasswordEntry.Text.ToString()
+            };
+
             try
             {
-                var auth = await authProvider.SignInWithEmailAndPasswordAsync(username.ToString(), password.ToString());
-                var content = await auth.GetFreshAuthAsync();
-                var serializedcontnet = JsonConvert.SerializeObject(content);
-                Preferences.Set("MyFirebaseRefreshToken", serializedcontnet);
-                await Navigation.PushAsync(new TabbedPage1());
+                // Convert to JSON
+                var json = JsonConvert.SerializeObject(loginModel);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                // Send the POST request
+                var response = await httpClient.PostAsync(apiUrl, content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    // Handle successful login
+                    await Navigation.PushAsync(new TabbedPage1());
+                }
+                else
+                {
+                    // Handle error responses
+                    var errorMessage = await response.Content.ReadAsStringAsync();
+                    await DisplayAlert("Error", $"Failed to login: {errorMessage}", "OK");
+                }
             }
             catch (Exception ex)
             {
-                await DisplayAlert("Error", "Invalid username or password", "OK");
-                return;
+                await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
             }
-        }   
+        }
 
         private async void RegisterNewUser(object sender, EventArgs e)
         {
