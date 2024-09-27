@@ -21,7 +21,7 @@ namespace App_de_Android.Views
 
         private async void OnLoginClicked(object sender, EventArgs e)
         {
-            string apiUrl = "https://myowndomain.lol:5001/api/Auth/login";  // Replace with your actual API URL
+            string apiUrl = "https://myowndomain.lol:5001/api/Auth/login";  // API URL
 
             var httpClient = new HttpClient();
             var loginModel = new
