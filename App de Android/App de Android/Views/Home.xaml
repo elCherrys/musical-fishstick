@@ -1,12 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App_de_Android.Views.Home">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="This is home"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             xmlns:local="clr-namespace:FreshBasketApp"
+             x:Class="FreshBasketApp.Home">
+
+    <StackLayout Padding="20">
+        <!-- Dirección -->
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start">
+            <Image Source="location_icon.png" WidthRequest="24" HeightRequest="24" />
+            <Label Text="Dirección" FontSize="Medium" VerticalOptions="Center" />
         </StackLayout>
-    </ContentPage.Content>
+
+        <!-- Categorías -->
+        <Label Text="Categorías" FontSize="Large" FontAttributes="Bold" />
+        <ScrollView Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <StackLayout Orientation="Horizontal">
+                <Frame CornerRadius="100" WidthRequest="80" HeightRequest="80">
+                    <StackLayout>
+                        <Image Source="frutas_icon.png" WidthRequest="50" HeightRequest="50"/>
+                        <Label Text="Frutas" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame CornerRadius="100" WidthRequest="80" HeightRequest="80">
+                    <StackLayout>
+                        <Image Source="vegetales_icon.png" WidthRequest="50" HeightRequest="50"/>
+                        <Label Text="Vegetales" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame CornerRadius="100" WidthRequest="80" HeightRequest="80">
+                    <StackLayout>
+                        <Image Source="vegano_icon.png" WidthRequest="50" HeightRequest="50"/>
+                        <Label Text="Vegano" HorizontalOptions="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Productos Populares -->
+        <Label Text="Productos Populares" FontSize="Large" FontAttributes="Bold" />
+        <ScrollView Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <StackLayout Orientation="Horizontal">
+                <Frame WidthRequest="150" HeightRequest="180">
+                    <StackLayout>
+                        <Image Source="manzana.png" WidthRequest="100" HeightRequest="100"/>
+                        <Label Text="Manzana Roja" FontSize="Medium" />
+                        <Label Text="Precio 1Kg $40.99" FontSize="Small"/>
+                        <Button Text="+" BackgroundColor="Green" TextColor="White"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame WidthRequest="150" HeightRequest="180">
+                    <StackLayout>
+                        <Image Source="platano.png" WidthRequest="100" HeightRequest="100"/>
+                        <Label Text="Plátano Chiapas" FontSize="Medium" />
+                        <Label Text="Precio 1Kg $38.99" FontSize="Small"/>
+                        <Button Text="+" BackgroundColor="Green" TextColor="White"/>
+                    </StackLayout>
+                </Frame>
+
+                
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Menú Inferior de Navegación -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand">
+            <Button Text="Home" ImageSource="home_icon.png" />
+            <Button Text="Noticias" ImageSource="noticias_icon.png" />
+            <Button Text="Carrito" ImageSource="carrito_icon.png" />
+            <Button Text="Cuenta" ImageSource="cuenta_icon.png" />
+        </StackLayout>
+
+    </StackLayout>
 </ContentPage>

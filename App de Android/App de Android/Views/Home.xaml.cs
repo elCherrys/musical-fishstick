@@ -1,21 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Xamarin.Forms;
 
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace App_de_Android.Views
+namespace FreshBasketApp
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Home : ContentPage
     {
         public Home()
         {
             InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, false);
+
+
         }
     }
 }

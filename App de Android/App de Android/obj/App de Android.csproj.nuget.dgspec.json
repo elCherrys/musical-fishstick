@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj": {}
+    "C:\\Users\\Alejandro.Lopez\\Documents\\Facpya\\Xamarin\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj": {}
   },
   "projects": {
-    "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj": {
+    "C:\\Users\\Alejandro.Lopez\\Documents\\Facpya\\Xamarin\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj",
+        "projectUniqueName": "C:\\Users\\Alejandro.Lopez\\Documents\\Facpya\\Xamarin\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj",
         "projectName": "App de Android",
-        "projectPath": "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj",
-        "packagesPath": "C:\\Users\\Qizi\\.nuget\\packages\\",
-        "outputPath": "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android\\obj\\",
+        "projectPath": "C:\\Users\\Alejandro.Lopez\\Documents\\Facpya\\Xamarin\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj",
+        "packagesPath": "C:\\Users\\Alejandro.Lopez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alejandro.Lopez\\Documents\\Facpya\\Xamarin\\musical-fishstick\\App de Android\\App de Android\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Qizi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alejandro.Lopez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
