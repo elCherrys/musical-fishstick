@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0WJXPOqtvRo=",
+  "dgSpecHash": "do2u5Svy518=",
   "success": true,
-  "projectFilePath": "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj",
+  "projectFilePath": "C:\\Users\\Qizi\\source\\repos\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Qizi\\.nuget\\packages\\firebaseauthentication.net\\3.4.0\\firebaseauthentication.net.3.4.0.nupkg.sha512",
     "C:\\Users\\Qizi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

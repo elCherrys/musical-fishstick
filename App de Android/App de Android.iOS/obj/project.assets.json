@@ -1436,11 +1436,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android.iOS\\App de Android.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Qizi\\source\\repos\\musical-fishstick\\App de Android\\App de Android.iOS\\App de Android.iOS.csproj",
       "projectName": "App de Android.iOS",
-      "projectPath": "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android.iOS\\App de Android.iOS.csproj",
+      "projectPath": "C:\\Users\\Qizi\\source\\repos\\musical-fishstick\\App de Android\\App de Android.iOS\\App de Android.iOS.csproj",
       "packagesPath": "C:\\Users\\Qizi\\.nuget\\packages\\",
-      "outputPath": "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Qizi\\source\\repos\\musical-fishstick\\App de Android\\App de Android.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1461,8 +1461,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj": {
-              "projectPath": "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj"
+            "C:\\Users\\Qizi\\source\\repos\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj": {
+              "projectPath": "C:\\Users\\Qizi\\source\\repos\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj"
             }
           }
         }

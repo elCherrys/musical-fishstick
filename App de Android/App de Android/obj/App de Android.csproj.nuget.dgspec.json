@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj": {}
+    "C:\\Users\\Qizi\\source\\repos\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj": {}
   },
   "projects": {
-    "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj": {
+    "C:\\Users\\Qizi\\source\\repos\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj",
+        "projectUniqueName": "C:\\Users\\Qizi\\source\\repos\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj",
         "projectName": "App de Android",
-        "projectPath": "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj",
+        "projectPath": "C:\\Users\\Qizi\\source\\repos\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj",
         "packagesPath": "C:\\Users\\Qizi\\.nuget\\packages\\",
-        "outputPath": "C:\\Freshasket\\musical-fishstick\\App de Android\\App de Android\\obj\\",
+        "outputPath": "C:\\Users\\Qizi\\Source\\Repos\\musical-fishstick\\App de Android\\App de Android\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
