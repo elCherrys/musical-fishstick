@@ -8,6 +8,6 @@
             BarBackgroundColor="Black"
             >
     <!--Pages can be added as references or inline-->
-    <locals:Home Title="Page1"/>
-    <locals:Page2 Title="Tab 3" />
+    <locals:Home Title="Home"/>
+    <locals:Page2 Title="Settings" />
 </TabbedPage>

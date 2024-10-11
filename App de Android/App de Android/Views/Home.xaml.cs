@@ -1,9 +1,9 @@
-﻿using System;
+﻿using App_de_Android.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,7 +15,7 @@ namespace App_de_Android.Views
         public Home()
         {
             InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, false);
+            BindingContext = new HomeViewModel();
         }
     }
 }
