@@ -1,16 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "tot267xXjlY=",
+  "dgSpecHash": "eXDzixB8z+Q=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Qizi\\source\\repos\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj",
+  "projectFilePath": "C:\\Users\\thefe\\Documents\\EquipoProgra\\GITHUB\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Qizi\\.nuget\\packages\\firebaseauthentication.net\\3.4.0\\firebaseauthentication.net.3.4.0.nupkg.sha512",
-    "C:\\Users\\Qizi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Qizi\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Qizi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\Qizi\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\Qizi\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\Qizi\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\thefe\\.nuget\\packages\\firebaseauthentication.net\\3.4.0\\firebaseauthentication.net.3.4.0.nupkg.sha512",
+    "C:\\Users\\thefe\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\thefe\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\thefe\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\thefe\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\thefe\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\thefe\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],
   "logs": []
 }
