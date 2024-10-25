@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App_de_Android.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,6 +12,7 @@ namespace App_de_Android
             InitializeComponent();
 
             MainPage = new NavigationPage(new Views.LoginScreen());
+            //MainPage = new TabbedPage1(); // Asegúrate de que este sea el nombre correcto de tu TabbedPage
 
         }
 

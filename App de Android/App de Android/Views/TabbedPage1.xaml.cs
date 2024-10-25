@@ -18,6 +18,7 @@ namespace App_de_Android.Views
         {
             InitializeComponent();
             On<Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }

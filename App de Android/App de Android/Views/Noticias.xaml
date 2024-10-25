@@ -2,19 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_de_Android.Views.Noticias">
-    <ContentPage.Content>
-        <StackLayout Spacing="0" Padding="20,0">
-            <!-- Padding around the layout -->
-            <Label Text="Noticias" FontSize="32" FontAttributes="Bold" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" TextColor="#ff6d00"/>
+    <AbsoluteLayout>
+
+        <!-- Background content (existing frames) -->
+        <StackLayout Spacing="0" Padding="20,0" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
+            <Label Text="Noticias" FontSize="32" Padding="0,20,0,0" FontAttributes="Bold" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" TextColor="#ff6d00"/>
 
             <!-- Primer Frame -->
             <Frame CornerRadius="20" Padding="0" HasShadow="True" HeightRequest="200" VerticalOptions="StartAndExpand">
-                <!-- Grid to stack the background image and text -->
                 <Grid>
-                    <!-- Background image -->
                     <Image Source="https://img.freepik.com/fotos-premium/tazon-fuente-fresa-fresca-rojo_185193-45914.jpg" Aspect="AspectFill" />
-
-                    <!-- Overlay for text on top of the image -->
                     <Label Text="¡Frutos Rojos De Temporada, Frescura Y Sabor Irresistible!"
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
@@ -23,18 +20,17 @@
                        FontAttributes="Bold"
                        Opacity="0.6"
                        Padding="10" 
-                       Margin="0 170 0 0"/>
+                       Margin="0,0,160,0"/>
                 </Grid>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnFrameTapped" CommandParameter="1"/>
+                </Frame.GestureRecognizers>
             </Frame>
 
             <!-- Segundo Frame -->
             <Frame CornerRadius="20" Padding="0" HasShadow="True" HeightRequest="200" VerticalOptions="StartAndExpand">
-                <!-- Grid to stack the background image and text -->
                 <Grid>
-                    <!-- Background image -->
                     <Image Source="https://img.freepik.com/fotos-premium/dibujo-verano-imagenes-fondo-espacio-copia_1179130-568427.jpg" Aspect="AspectFill" />
-
-                    <!-- Overlay for text on top of the image -->
                     <Label Text="Naranjas Frescas!"
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
@@ -43,18 +39,17 @@
                        FontAttributes="Bold"
                        Opacity="0.6"
                        Padding="10" 
-                       Margin="0 120 70 20"/>
+                       Margin="20,0,120,70"/>
                 </Grid>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnFrameTapped" CommandParameter="2"/>
+                </Frame.GestureRecognizers>
             </Frame>
 
             <!-- Tercer Frame -->
             <Frame CornerRadius="20" Padding="0" HasShadow="True" HeightRequest="200" VerticalOptions="StartAndExpand">
-                <!-- Grid to stack the background image and text -->
                 <Grid>
-                    <!-- Background image -->
                     <Image Source="https://img.freepik.com/foto-gratis/ilustracion-verduras-frutas-bonitas_23-2151859026.jpg?t=st=1728701387~exp=1728704987~hmac=ad59ce0a3eb51393e0c24ad07156ea513c49541e1958a7baa9a8b02fa0d70f0aw=1380" Aspect="AspectFill" />
-
-                    <!-- Overlay for text on top of the image -->
                     <Label Text="¡Verduras Frescas, Llenas De Sabor Y Salud!"
                        HorizontalOptions="Center"
                        VerticalOptions="Center"
@@ -63,9 +58,48 @@
                        FontAttributes="Bold"
                        Opacity="0.6"
                        Padding="10" 
-                       Margin="0 60 0 70"/>
+                       Margin="70,0,70,0"/>
                 </Grid>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnFrameTapped" CommandParameter="3"/>
+                </Frame.GestureRecognizers>
             </Frame>
         </StackLayout>
-    </ContentPage.Content>
+
+        <!-- Modal layer -->
+        <StackLayout x:Name="ModalContainer"
+                     AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0,0,1,1"
+                     BackgroundColor="Black"
+                     Opacity="0"
+                     IsVisible="False">
+
+            <!-- Semi-transparent background -->
+            <BoxView Color="Black" Opacity="0.8" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+
+            <!-- Modal content -->
+            <Frame CornerRadius="20" BackgroundColor="White" Padding="20" Margin="20,0,20,0" HeightRequest="300" VerticalOptions="EndAndExpand">
+                <StackLayout>
+                    <!-- Title -->
+                    <Label x:Name="ModalTitle" FontSize="30" FontAttributes="Bold" HorizontalOptions="Center" />
+
+                    <!-- Image -->
+                    <Image x:Name="ModalImage" HeightRequest="150" VerticalOptions="CenterAndExpand" />
+
+                    <!-- Subtitle -->
+                    <Label x:Name="ModalSubtitle" FontSize="18" HorizontalOptions="Center" />
+
+                    <!-- Description -->
+                    <Label x:Name="ModalDescription" HorizontalOptions="Center" FontSize="14" />
+
+                    <!-- Close Button -->
+                    <Button Text="Cerrar" 
+                            HorizontalOptions="End" VerticalOptions="Start" 
+                            Clicked="CloseModal"/>
+
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+
+    </AbsoluteLayout>
 </ContentPage>
