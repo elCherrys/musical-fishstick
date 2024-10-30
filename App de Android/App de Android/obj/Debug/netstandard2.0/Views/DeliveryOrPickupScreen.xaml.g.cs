@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App_de_Android.Views.pipi.xaml", "Views/pipi.xaml", typeof(global::App_de_Android.Views.Page2))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App_de_Android.Views.DeliveryOrPickupScreen.xaml", "Views/DeliveryOrPickupScreen.xaml", typeof(global::App_de_Android.Views.DeliveryOrPickupScreen))]
 
 namespace App_de_Android.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\pipi.xaml")]
-    public partial class Page2 : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\DeliveryOrPickupScreen.xaml")]
+    public partial class DeliveryOrPickupScreen : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Page2));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(DeliveryOrPickupScreen));
         }
     }
 }

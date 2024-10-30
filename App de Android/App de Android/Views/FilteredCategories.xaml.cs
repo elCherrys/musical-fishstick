@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace App_de_Android.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Page2 : ContentPage
+	public partial class FilteredCategories : ContentPage
 	{
-		public Page2 ()
+		public FilteredCategories ()
 		{
 			InitializeComponent ();
 		}

@@ -4,10 +4,14 @@
              x:Class="App_de_Android.Views.RegisterScreen">
     <ContentPage.Content>
         <StackLayout>
+            
             <Label Text="Register"/>
+            
             <Label Text="Enter your details to register"/>
+            
             <Entry x:Name="UsernameEntry" Placeholder="Username" TextChanged="EvaluateForm"/>
             <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email" TextChanged="EvaluateForm"/>
+            
             <Label x:Name="InvalidEmailLabel" TextColor="Red" IsVisible="False" Text="Invalid Email"/>
             <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" TextChanged="EvaluateForm" />
             <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm Password" IsPassword="True" TextChanged="EvaluateForm" />

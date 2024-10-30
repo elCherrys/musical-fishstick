@@ -35,24 +35,24 @@ C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstand
 C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\LoginScreen.xaml.g.cs
 C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\pipi.xaml.g.cs
 C:\Freshasket\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\RegisterScreen.xaml.g.cs
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\bin\Debug\netstandard2.0\App de Android.deps.json
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\bin\Debug\netstandard2.0\App de Android.dll
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\bin\Debug\netstandard2.0\ref\App de Android.dll
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\bin\Debug\netstandard2.0\App de Android.pdb
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.csproj.AssemblyReference.cache
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\ForgotPassword.xaml.g.cs
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\LoginScreen.xaml.g.cs
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\pipi.xaml.g.cs
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\RegisterScreen.xaml.g.cs
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\TabbedPage1.xaml.g.cs
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.AssemblyInfoInputs.cache
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.AssemblyInfo.cs
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.csproj.CoreCompileInputs.cache
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.sourcelink.json
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\refint\App de Android.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\App de Android.pdb
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\bin\Debug\netstandard2.0\App de Android.deps.json
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\bin\Debug\netstandard2.0\App de Android.dll
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\bin\Debug\netstandard2.0\ref\App de Android.dll
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\bin\Debug\netstandard2.0\App de Android.pdb
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\News.xaml.g.cs

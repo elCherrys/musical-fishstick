@@ -5,18 +5,20 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using App_de_Android.Models;
+using System.Collections.ObjectModel;
 
 public class HomeViewModel : INotifyPropertyChanged
 {
-    private List<HomeModel> _products;
+    private ObservableCollection<HomeModel> _products;
     private bool _isLoading;
 
-    public List<HomeModel> Products
+    public ObservableCollection<HomeModel> Products
     {
         get { return _products; }
         set
         {
             _products = value;
+            Console.WriteLine($"Products updated: {Products.Count} items."); // Debug output
             OnPropertyChanged(nameof(Products));
         }
     }
@@ -45,9 +47,9 @@ public class HomeViewModel : INotifyPropertyChanged
             IsLoading = true;
             using (HttpClient httpClient = new HttpClient())
             {
-                string apiUrl = "https://myowndomain.lol:5001/api/product/get";
+                string apiUrl = "https://myowndomain.lol:5001/api/product/get"; // Your API URL
                 var response = await httpClient.GetStringAsync(apiUrl);
-                Products = JsonConvert.DeserializeObject<List<HomeModel>>(response);
+                Products = JsonConvert.DeserializeObject<ObservableCollection<HomeModel>>(response);
             }
         }
         catch (Exception ex)

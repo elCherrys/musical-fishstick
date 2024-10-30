@@ -126,3 +126,16 @@ C:\Freshasket\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Deb
 C:\Freshasket\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\App de Android.iOS.pdb
 C:\Freshasket\musical-fishstick\App de Android\App de Android.iOS\bin\iPhone\Debug\Firebase.Auth.dll
 C:\Freshasket\musical-fishstick\App de Android\App de Android.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\actool\_ProcessedImageAssetsPath.items
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\ibtool\_ProcessedInterfaceDefinitionsPath.items
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\coremlc\_PartialAppManifest.items
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\coremlc\_ProcessedCoreMLModelsPath.items
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\_ProcessedBundleResourcesPath.items
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\_ProcessedContentPath.items
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\optimized\
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\App de Android.iOS.csproj.AssemblyReference.cache
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.iOS\obj\iPhone\Debug\App de Android.iOS.csproj.CoreCompileInputs.cache

@@ -17,6 +17,7 @@ namespace App_de_Android.Views
         public TabbedPage1()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
             On<Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
         }
     }
