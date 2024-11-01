@@ -90,6 +90,7 @@ namespace App_de_Android.Views
                 if (response.IsSuccessStatusCode)
                 {
                     await Navigation.PopAsync();
+                    await DisplayAlert("Su cuenta ha sido registrada exitosamente", "", "OK");
                 }
                 else
                 {

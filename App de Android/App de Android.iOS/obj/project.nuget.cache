@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "qbuz86aE6UY=",
+  "dgSpecHash": "NPn8boVunxSe0OvDljhua9HjmxhYh7k7D7gzH1+VOxp1PNddyEQdn/zq82D9bpSAugUvAkgZmDOtYkkFucV/fw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Qizi\\source\\repos\\musical-fishstick\\App de Android\\App de Android.iOS\\App de Android.iOS.csproj",
+  "projectFilePath": "C:\\Users\\miguel\\Desktop\\MIperfil\\musical-fishstick\\App de Android\\App de Android.iOS\\App de Android.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Qizi\\.nuget\\packages\\firebaseauthentication.net\\3.4.0\\firebaseauthentication.net.3.4.0.nupkg.sha512",
-    "C:\\Users\\Qizi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
-    "C:\\Users\\Qizi\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\Qizi\\.nuget\\packages\\xamarin.essentials\\1.8.1\\xamarin.essentials.1.8.1.nupkg.sha512",
-    "C:\\Users\\Qizi\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\miguel\\.nuget\\packages\\firebaseauthentication.net\\3.4.0\\firebaseauthentication.net.3.4.0.nupkg.sha512",
+    "C:\\Users\\miguel\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\miguel\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\miguel\\.nuget\\packages\\xamarin.essentials\\1.8.1\\xamarin.essentials.1.8.1.nupkg.sha512",
+    "C:\\Users\\miguel\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],
   "logs": []
 }
