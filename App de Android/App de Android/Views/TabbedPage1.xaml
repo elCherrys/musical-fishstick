@@ -10,4 +10,6 @@
     <!--Pages can be added as references or inline-->
     <locals:Home Title="Home"/>
     <locals:News Title="News" />
+    <locals:News Title="Profile" />
+   
 </TabbedPage>

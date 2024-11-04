@@ -1,26 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App_de_Android.Views.RegisterScreen">
+             x:Class="App_de_Android.Views.RegisterScreen"
+             BackgroundColor="#ff7220">
+
     <ContentPage.Content>
-        <StackLayout>
-            
-            <Label Text="Register"/>
-            
-            <Label Text="Enter your details to register"/>
-            
-            <Entry x:Name="UsernameEntry" Placeholder="Username" TextChanged="EvaluateForm"/>
-            <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email" TextChanged="EvaluateForm"/>
-            
-            <Label x:Name="InvalidEmailLabel" TextColor="Red" IsVisible="False" Text="Invalid Email"/>
-            <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" TextChanged="EvaluateForm" />
-            <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm Password" IsPassword="True" TextChanged="EvaluateForm" />
-            <Label x:Name="PasswordsMatchLabel" TextColor="Red" IsVisible="False" Text="Passwords Don't Match"/>
-            <Label x:Name="PasswordLengthLabel" TextColor="Red" IsVisible="False" Text="Password must be longer than 6 characters"/>
-            <Label x:Name="PasswordUppercaseLabel" TextColor="Red" IsVisible="False" Text="Password must contain at least one uppercase letter"/>
-            <Label x:Name="PasswordLowercaseLabel" TextColor="Red" IsVisible="False" Text="Password must contain at least one lowercase letter"/>
-            <Label x:Name="PasswordNumberLabel" TextColor="Red" IsVisible="False" Text="Password must contain at least one number"/>
-            <Button x:Name="RegisterButton" Text="Register" Clicked="RegisterUser" IsEnabled="False"/>
+
+        <StackLayout Padding="30" VerticalOptions="Center">
+
+            <Label Text="Register" FontSize="40" HorizontalOptions="Center"/>
+
+            <Label Text="Enter your details to register" FontSize="18" HorizontalOptions="Center"/>
+
+            <Frame BackgroundColor="White" CornerRadius="5" Padding="5" HasShadow="True" HeightRequest="50">
+                <Entry x:Name="UsernameEntry" Placeholder="Username" TextChanged="EvaluateForm" FontSize="18" HorizontalOptions="Start" TextColor="Black" PlaceholderColor="LightGray"/>
+            </Frame>
+
+            <BoxView HeightRequest="10"/>
+
+            <Frame BackgroundColor="White" CornerRadius="5" Padding="5" HasShadow="True" HeightRequest="50">
+                <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email" TextChanged="EvaluateForm" FontSize="18" HorizontalOptions="Start" TextColor="Black" PlaceholderColor="LightGray"/>
+            </Frame>
+
+            <BoxView HeightRequest="10"/>
+
+            <Label x:Name="InvalidEmailLabel" TextColor="Red" IsVisible="False" Text="Invalid Email" HorizontalOptions="Center"/>
+
+            <Frame BackgroundColor="White" CornerRadius="5" Padding="5" HasShadow="True" HeightRequest="50">
+                <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" TextChanged="EvaluateForm" FontSize="18" HorizontalOptions="Start" TextColor="Black" PlaceholderColor="LightGray"/>
+            </Frame>
+
+            <BoxView HeightRequest="10"/>
+
+            <Frame BackgroundColor="White" CornerRadius="5" Padding="5" HasShadow="True" HeightRequest="50">
+                <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm Password" IsPassword="True" TextChanged="EvaluateForm" FontSize="18" HorizontalOptions="Start" TextColor="Black" PlaceholderColor="LightGray"/>
+            </Frame>
+
+            <BoxView HeightRequest="10"/>
+
+            <Label x:Name="PasswordsMatchLabel" TextColor="Red" IsVisible="False" Text="Passwords Don't Match" HorizontalOptions="Center"/>
+
+            <Label x:Name="PasswordLengthLabel" TextColor="Red" IsVisible="False" Text="Password must be longer than 6 characters" HorizontalOptions="Center"/>
+
+            <Label x:Name="PasswordUppercaseLabel" TextColor="Red" IsVisible="False" Text="Password must contain at least one uppercase letter" HorizontalOptions="Center"/>
+
+            <Label x:Name="PasswordLowercaseLabel" TextColor="Red" IsVisible="False" Text="Password must contain at least one lowercase letter" HorizontalOptions="Center"/>
+
+            <Label x:Name="PasswordNumberLabel" TextColor="Red" IsVisible="False" Text="Password must contain at least one number" HorizontalOptions="Center"/>
+
+            <Button x:Name="RegisterButton" Text="Register" Clicked="RegisterUser" IsEnabled="False" Padding="5" CornerRadius="5"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_de_Android.Views.Profile">
+
+	<StackLayout Padding="20">
+		<!-- Botones con mensajes -->
+		<Button Text="Mensaje 1: Hola, Mundo" Clicked="Boton1_Clicked" />
+		<Button Text="Mensaje 2: Bienvenido" Clicked="Boton2_Clicked" />
+		<Button Text="Mensaje 3: Presiona aquí" Clicked="Boton3_Clicked" />
+		<Button Text="Mensaje 4: Xamarin es genial" Clicked="Boton4_Clicked" />
+		<Button Text="Mensaje 5: ¡Prueba completada!" Clicked="Boton5_Clicked" />
+	</StackLayout>
+
+</ContentPage>
+            
