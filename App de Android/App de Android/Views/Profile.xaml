@@ -1,16 +1,115 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App_de_Android.Views.Profile">
+             x:Class="App_de_Android.Views.Profile"
+             BackgroundColor="#FFF3E0">
 
-	<StackLayout Padding="20">
-		<!-- Botones con mensajes -->
-		<Button Text="Mensaje 1: Hola, Mundo" Clicked="Boton1_Clicked" />
-		<Button Text="Mensaje 2: Bienvenido" Clicked="Boton2_Clicked" />
-		<Button Text="Mensaje 3: Presiona aquí" Clicked="Boton3_Clicked" />
-		<Button Text="Mensaje 4: Xamarin es genial" Clicked="Boton4_Clicked" />
-		<Button Text="Mensaje 5: ¡Prueba completada!" Clicked="Boton5_Clicked" />
-	</StackLayout>
+    <StackLayout Padding="30" Spacing="20" VerticalOptions="Center">
 
+        <!-- CUENTA -->
+        <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Frame1_Tapped" />
+            </Frame.GestureRecognizers>
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <!-- Columna para el ícono -->
+                    <ColumnDefinition Width="*" />
+                    <!-- Columna para el texto -->
+                </Grid.ColumnDefinitions>
+                <Image Source="icon1.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Cuenta" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
+            </Grid>
+        </Frame>
+
+        <!-- DIRECCIONES-->
+        <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Frame2_Tapped" />
+            </Frame.GestureRecognizers>
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="icon2.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Direcciones" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
+            </Grid>
+        </Frame>
+
+
+
+
+        <!-- CUPONES -->
+        <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Frame3_Tapped" />
+            </Frame.GestureRecognizers>
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <!-- Columna para el ícono -->
+                    <ColumnDefinition Width="*" />
+                    <!-- Columna para el texto -->
+                </Grid.ColumnDefinitions>
+                <Image Source="icon3.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Cupones" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
+            </Grid>
+        </Frame>
+
+        <!-- AYUDA -->
+        <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Frame4_Tapped" />
+            </Frame.GestureRecognizers>
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="icon4.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Ayuda" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
+            </Grid>
+        </Frame>
+
+
+
+
+        <!-- Configuracion -->
+        <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Frame5_Tapped" />
+            </Frame.GestureRecognizers>
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <!-- Columna para el ícono -->
+                    <ColumnDefinition Width="*" />
+                    <!-- Columna para el texto -->
+                </Grid.ColumnDefinitions>
+                <Image Source="icon5.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Configuracion" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
+            </Grid>
+        </Frame>
+
+        <!-- Salir -->
+        <Frame CornerRadius="20" Padding="15"  HasShadow="True" HeightRequest="60">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Frame6_Tapped" />
+            </Frame.GestureRecognizers>
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Source="icon6.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Salir" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
+            </Grid>
+        </Frame>
+
+
+
+
+    </StackLayout>
 </ContentPage>
-            
