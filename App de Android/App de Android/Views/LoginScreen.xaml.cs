@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using Firebase.Auth;
 using Newtonsoft.Json;
 using Xamarin.Essentials;
 using System.Net.Http;

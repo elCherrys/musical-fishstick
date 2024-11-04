@@ -1,4 +1,4 @@
-﻿using Firebase.Auth;
+﻿
 using Newtonsoft.Json;
 using System;
 using System.Net.Http;

@@ -1357,7 +1357,6 @@ C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Andro
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\App de Android.Android.pdb
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\App de Android.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\App de Android.pdb
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\Firebase.Auth.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\FormsViewGroup.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\FormsViewGroup.pdb
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\Java.Interop.dll
@@ -1371,7 +1370,6 @@ C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Andro
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\mscorlib.pdb
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\netstandard.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\Newtonsoft.Json.dll
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Collections.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.ComponentModel.Composition.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.ComponentModel.Composition.pdb
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Core.dll
@@ -1380,7 +1378,6 @@ C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Andro
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Data.DataSetExtensions.pdb
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Data.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Data.pdb
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Diagnostics.Debug.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Drawing.Common.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Drawing.Common.pdb
@@ -1388,7 +1385,6 @@ C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Andro
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.IO.Compression.FileSystem.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.IO.Compression.FileSystem.pdb
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.IO.Compression.pdb
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Linq.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Net.Http.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Net.Http.pdb
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Numerics.dll
@@ -1396,17 +1392,11 @@ C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Andro
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Numerics.Vectors.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Numerics.Vectors.pdb
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.pdb
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Reflection.dll
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Reflection.Extensions.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Runtime.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Runtime.Serialization.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Runtime.Serialization.pdb
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Runtime.Serialization.Primitives.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.ServiceModel.Internals.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.ServiceModel.Internals.pdb
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Text.Encoding.dll
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Threading.dll
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Threading.Tasks.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Transactions.dll
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Transactions.pdb
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Web.Services.dll
@@ -1938,3 +1928,13 @@ C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Andro
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\src\crc64a0e0a82d0db9a07d\Connectivity_EssentialsNetworkCallback.java
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\Firebase.Auth.dll
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Collections.dll
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Diagnostics.Debug.dll
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Linq.dll
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Reflection.dll
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Reflection.Extensions.dll
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Runtime.Serialization.Primitives.dll
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Text.Encoding.dll
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Threading.dll
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android.Android\obj\Debug\130\android\assets\System.Threading.Tasks.dll

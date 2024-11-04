@@ -20,7 +20,7 @@
 
         <!-- Email Entry -->
         <Frame BackgroundColor="White" CornerRadius="5" Padding="5" HasShadow="True">
-            <Entry x:Name="EmailEntry" Placeholder="Username" PlaceholderColor="Gray" TextColor="Black" TextChanged="OnTextChanged"/>
+            <Entry x:Name="EmailEntry" Placeholder="Email" PlaceholderColor="Gray" TextColor="Black" TextChanged="OnTextChanged"/>
         </Frame>
         <BoxView HeightRequest="10" />
 
