@@ -5,12 +5,13 @@ using Xamarin.Forms;
 
 namespace App_de_Android.Models
 {
-    public class HomeModel
+    public class ProductsModel
     {
         public string name { get; set; }
         public string description { get; set; }
         public string price { get; set; }
         public string image { get; set; }
+        public string categoryName { get; set; }
     }
 
 

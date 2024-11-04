@@ -4,5 +4,10 @@
              x:Class="App_de_Android.App">
     <Application.Resources>
         <local:InverseBooleanConverter x:Key="InverseBooleanConverter" />
+                <ResourceDictionary>
+            <local:BooleanToColorConverter x:Key="BooleanToColorConverter" 
+                                           TrueColor="Green" 
+                                           FalseColor="Transparent"/>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

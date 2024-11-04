@@ -13,13 +13,18 @@ using System.Linq;
 
 public class HomeViewModel : INotifyPropertyChanged
 {
-    private ObservableCollection<HomeModel> _products;
-    private ObservableCollection<CategoriesModel> _categories;
-    public ICommand NavigateToCategoriesCommand { get; private set; }
-    public ICommand NavigateToProductsCommand { get; private set; }
-    private bool _isLoading;
+    private ObservableCollection<ProductsModel> _products; // Observable collection of products
+    private ObservableCollection<CategoriesModel> _categories; // Observable collection of categories
 
-    public ObservableCollection<HomeModel> Products
+    // Commands for navigation
+    public ICommand NavigateToCategoriesCommand { get; private set; }
+    public ICommand NavigateToFilteredCategoriesCommand { get; private set; }
+    public ICommand NavigateToProductsCommand { get; private set; }
+
+    private bool _isLoading; // Loading state
+
+    // Public property for products
+    public ObservableCollection<ProductsModel> Products
     {
         get { return _products; }
         set
@@ -30,6 +35,7 @@ public class HomeViewModel : INotifyPropertyChanged
         }
     }
 
+    // Public property for categories
     public ObservableCollection<CategoriesModel> Categories
     {
         get { return _categories; }
@@ -40,7 +46,7 @@ public class HomeViewModel : INotifyPropertyChanged
         }
     }
 
-
+    // Public property for loading state
     public bool IsLoading
     {
         get { return _isLoading; }
@@ -51,28 +57,52 @@ public class HomeViewModel : INotifyPropertyChanged
         }
     }
 
-    public event PropertyChangedEventHandler PropertyChanged;
+    public event PropertyChangedEventHandler PropertyChanged; // Event to handle property changes
 
+    // Constructor
     public HomeViewModel()
     {
-        LoadProducts();
-        LoadCategories();
-        NavigateToCategoriesCommand = new Command(NavigateToCategories);
-        NavigateToProductsCommand = new Command(NavigateToProducts);
+        LoadProducts(); // Load products from API
+        LoadCategories(); // Load categories from API
+        NavigateToCategoriesCommand = new Command(NavigateToCategories); // Command to navigate to categories view
+        NavigateToFilteredCategoriesCommand = new Command<string>(NavigateToFilteredCategories); // Command to navigate to filtered categories view*
+        NavigateToProductsCommand = new Command(NavigateToProducts); // Command to navigate to products view
     }
 
+    // Navigate to Categories view
     private void NavigateToCategories()
     {
-        // Navigate to Categories view
         Application.Current.MainPage.Navigation.PushAsync(new Categories());
     }
 
+    // Navigate to FilteredCategories view with selected category
+    private async void NavigateToFilteredCategories(string categoryName)
+    {
+        var filteredCategoriesPage = new FilteredCategories();
+        var viewModel = (FilteredCategoriesViewModel)filteredCategoriesPage.BindingContext;
+        viewModel.Products = _products;
+
+        // Ensure categories are loaded before setting the selected category
+        await viewModel.LoadCategoriesAsync();
+        viewModel.SelectedCategory = viewModel.Categories.FirstOrDefault(c => c.Name == categoryName);
+
+        // Set IsSelected for the chosen category
+        foreach (var cat in viewModel.Categories)
+        {
+            cat.IsSelected = cat.Name == categoryName;
+        }
+
+        Application.Current.MainPage.Navigation.PushAsync(filteredCategoriesPage);
+    }
+
+
+    // Navigate to Products view
     private void NavigateToProducts()
     {
-        // Navigate to Products view
         Application.Current.MainPage.Navigation.PushAsync(new PopularProducts());
     }
 
+    // Load products from API
     private async void LoadProducts()
     {
         try
@@ -82,13 +112,12 @@ public class HomeViewModel : INotifyPropertyChanged
             {
                 string apiUrl = "https://myowndomain.lol:5001/api/product/get"; // Your API URL
                 var response = await httpClient.GetStringAsync(apiUrl);
-                Products = JsonConvert.DeserializeObject<ObservableCollection<HomeModel>>(response);
+                Products = JsonConvert.DeserializeObject<ObservableCollection<ProductsModel>>(response);
             }
         }
         catch (Exception ex)
         {
-            // Handle any exceptions (network errors, parsing errors, etc.)
-            Console.WriteLine("Error fetching products: " + ex.Message);
+            Console.WriteLine("Error fetching products: " + ex.Message); // Handle any exceptions
         }
         finally
         {
@@ -96,6 +125,7 @@ public class HomeViewModel : INotifyPropertyChanged
         }
     }
 
+    // Load categories from API
     private async void LoadCategories()
     {
         try
@@ -111,7 +141,7 @@ public class HomeViewModel : INotifyPropertyChanged
         }
         catch (Exception ex)
         {
-            Console.WriteLine("Error fetching categories: " + ex.Message);
+            Console.WriteLine("Error fetching categories: " + ex.Message); // Handle any exceptions
         }
         finally
         {
@@ -119,6 +149,7 @@ public class HomeViewModel : INotifyPropertyChanged
         }
     }
 
+    // Notify property changed
     protected virtual void OnPropertyChanged(string propertyName)
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
