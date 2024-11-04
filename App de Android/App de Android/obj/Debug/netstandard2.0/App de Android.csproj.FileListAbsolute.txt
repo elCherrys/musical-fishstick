@@ -70,5 +70,4 @@ C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\D
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\PopularProducts.xaml.g.cs
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\Settings.xaml.g.cs
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\Categories.xaml.g.cs
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\ViewModels\Profile.xaml.g.cs
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\Profile.xaml.g.cs
