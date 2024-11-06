@@ -1,6 +1,11 @@
 ﻿using System;
-using Xamarin.Forms;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 namespace App_de_Android.Views
 {
     public partial class Profile : ContentPage
@@ -22,16 +27,16 @@ namespace App_de_Android.Views
             DisplayAlert("Tapped", "Marco 2 fue tocado", "OK");
         }
 
-        private void Frame3_Tapped(object sender, EventArgs e)
+        private async void Frame3_Tapped(object sender, EventArgs e)
         {
             // Lógica para el marco 3
-            DisplayAlert("Tapped", "Marco 3 fue tocado", "OK");
+            await Navigation.PushAsync(new CouponScreen());
         }
 
-        private void Frame4_Tapped(object sender, EventArgs e)
+        private async void Frame4_Tapped(object sender, EventArgs e)
         {
             // Lógica para el marco 4
-            DisplayAlert("Tapped", "Marco 4 fue tocado", "OK");
+            await Navigation.PushAsync(new Help());
         }
 
         private void Frame5_Tapped(object sender, EventArgs e)

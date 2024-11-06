@@ -18,7 +18,7 @@
                     <ColumnDefinition Width="*" />
                     <!-- Columna para el texto -->
                 </Grid.ColumnDefinitions>
-                <Image Source="icon1.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
+                <Image Source="Images/profile.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
                 <Label Text="Cuenta" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
             </Grid>
         </Frame>
@@ -33,7 +33,7 @@
                     <ColumnDefinition Width="40" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="icon2.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
+                <Image Source="Images/address.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
                 <Label Text="Direcciones" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
             </Grid>
         </Frame>
@@ -53,7 +53,7 @@
                     <ColumnDefinition Width="*" />
                     <!-- Columna para el texto -->
                 </Grid.ColumnDefinitions>
-                <Image Source="icon3.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
+                <Image Source="Images/cupons.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
                 <Label Text="Cupones" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
             </Grid>
         </Frame>
@@ -68,7 +68,7 @@
                     <ColumnDefinition Width="40" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="icon4.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
+                <Image Source="Images/help.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
                 <Label Text="Ayuda" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
             </Grid>
         </Frame>
@@ -88,7 +88,7 @@
                     <ColumnDefinition Width="*" />
                     <!-- Columna para el texto -->
                 </Grid.ColumnDefinitions>
-                <Image Source="icon5.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
+                <Image Source="Images/settings.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
                 <Label Text="Configuracion" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
             </Grid>
         </Frame>
@@ -103,7 +103,7 @@
                     <ColumnDefinition Width="40" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="icon6.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
+                <Image Source="Images/exit.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
                 <Label Text="Salir" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
             </Grid>
         </Frame>

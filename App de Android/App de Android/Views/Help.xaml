@@ -1,12 +1,92 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App_de_Android.Views.Help">
+             x:Class="App_de_Android.Views.Help"
+             BackgroundColor="#ff7220">
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+
+
+
+
+            <!-- Frame de inicio-->
+            <Frame CornerRadius="3" Padding="15" HasShadow="True" HeightRequest="80">
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40" />
+                        <!-- Columna para el ícono -->
+                        <ColumnDefinition Width="*" />
+                        <!-- Columna para el texto -->
+                    </Grid.ColumnDefinitions>
+                    <Label Text="CENTRO DE CUPONES" Grid.Column="1" VerticalTextAlignment="Center" FontSize="30" />
+                </Grid>
+            </Frame>
+
+
+
+            <!-- Primer Frame -->
+            <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Onhelp1Tapped" />
+                </Frame.GestureRecognizers>
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40" />
+                        <!-- Columna para el ícono -->
+                        <ColumnDefinition Width="*" />
+                        <!-- Columna para el texto -->
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Images/cupons.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
+                    <Label Text="Cupon 1" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
+                </Grid>
+            </Frame>
+
+
+
+
+            <!-- Segundo Frame -->
+            <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Onhelp2Tapped" />
+                </Frame.GestureRecognizers>
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40" />
+                        <!-- Columna para el ícono -->
+                        <ColumnDefinition Width="*" />
+                        <!-- Columna para el texto -->
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Images/cupons.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
+                    <Label Text="Cupon 2" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
+                </Grid>
+            </Frame>
+
+
+
+            <!-- Tercer Frame -->
+            <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Onhelp3Tapped" />
+                </Frame.GestureRecognizers>
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40" />
+                        <!-- Columna para el ícono -->
+                        <ColumnDefinition Width="*" />
+                        <!-- Columna para el texto -->
+                    </Grid.ColumnDefinitions>
+                    <Image Source="Images/cupons.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
+                    <Label Text="Cupon 3" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
+                </Grid>
+            </Frame>
+
+
+
+
+
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
