@@ -39,10 +39,10 @@ namespace App_de_Android.Views
             await Navigation.PushAsync(new Help());
         }
 
-        private void Frame5_Tapped(object sender, EventArgs e)
+        private async void Frame5_Tapped(object sender, EventArgs e)
         {
             // Lógica para el marco 5
-            DisplayAlert("Tapped", "Marco 5 fue tocado", "OK");
+            await Navigation.PushAsync(new Settings());
         }
 
         private async void Frame6_Tapped(object sender, EventArgs e)
