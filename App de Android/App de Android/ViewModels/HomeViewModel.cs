@@ -20,6 +20,7 @@ public class HomeViewModel : INotifyPropertyChanged
     public ICommand NavigateToCategoriesCommand { get; private set; }
     public ICommand NavigateToFilteredCategoriesCommand { get; private set; }
     public ICommand NavigateToProductsCommand { get; private set; }
+    public ICommand NavigateToAddressCommand { get; private set; }
 
     private bool _isLoading; // Loading state
 
@@ -67,6 +68,7 @@ public class HomeViewModel : INotifyPropertyChanged
         NavigateToCategoriesCommand = new Command(NavigateToCategories); // Command to navigate to categories view
         NavigateToFilteredCategoriesCommand = new Command<string>(NavigateToFilteredCategories); // Command to navigate to filtered categories view*
         NavigateToProductsCommand = new Command(NavigateToProducts); // Command to navigate to products view
+        NavigateToAddressCommand = new Command(NavigateToAdress); // Command to navigate to address view
     }
 
     // Navigate to Categories view
@@ -94,7 +96,10 @@ public class HomeViewModel : INotifyPropertyChanged
 
         Application.Current.MainPage.Navigation.PushAsync(filteredCategoriesPage);
     }
-
+    private void NavigateToAdress()
+    {
+        Application.Current.MainPage.Navigation.PushAsync(new AddressListView());
+    }
 
     // Navigate to Products view
     private void NavigateToProducts()

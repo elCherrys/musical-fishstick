@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App_de_Android.Views.Adresses.xaml", "Views/Adresses.xaml", typeof(global::App_de_Android.Views.Adresses))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("App_de_Android.Views.AddAddress}View.xaml", "Views/AddAddress}View.xaml", typeof(global::App_de_Android.Views.AddAddressesView))]
 
 namespace App_de_Android.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Adresses.xaml")]
-    public partial class Adresses : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\AddAddress}View.xaml")]
+    public partial class AddAddressesView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Adresses));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AddAddressesView));
         }
     }
 }

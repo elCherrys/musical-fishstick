@@ -7,6 +7,9 @@
             <!-- Top Frame for Address Label -->
             <Frame HeightRequest="150" HasShadow="False" BackgroundColor="#FFF3E0">
                 <Label Text="Address" TextColor="Black" HorizontalOptions="Center" FontSize="30" VerticalOptions="Center"/>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding NavigateToAddressCommand}"/>
+                </Frame.GestureRecognizers>
             </Frame>
 
             <!-- Categories Header with View All -->

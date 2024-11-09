@@ -1,9 +1,11 @@
 ﻿
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Text.RegularExpressions;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -69,32 +71,37 @@ namespace App_de_Android.Views
 
         private async void RegisterUser(object sender, EventArgs e)
         {
-            string apiUrl = "https://myowndomain.lol:5001/api/Auth/register";  // Replace with your actual API URL
+            string apiUrl = "https://myowndomain.lol:5001/api/Auth/register";
 
             var httpClient = new HttpClient();
             var registerModel = new
             {
-                email = EmailEntry.Text.ToString(),
-                password = PasswordEntry.Text.ToString()
+                email = EmailEntry.Text,
+                password = PasswordEntry.Text,
+                username = UsernameEntry.Text
             };
 
             try
             {
-                // Convert to json
                 var json = JsonConvert.SerializeObject(registerModel);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                // Send the POST request
                 var response = await httpClient.PostAsync(apiUrl, content);
 
                 if (response.IsSuccessStatusCode)
                 {
+                    var responseContent = await response.Content.ReadAsStringAsync();
+
+                    // Deserialize JSON response to extract the token
+                    var tokenObj = JsonConvert.DeserializeObject<Dictionary<string, string>>(responseContent);
+                    var token = tokenObj["token"];
+
+                    await SecureStorage.SetAsync("authToken", token);
                     await Navigation.PopAsync();
                     await DisplayAlert("Su cuenta ha sido registrada exitosamente", "", "OK");
                 }
                 else
                 {
-                    // Handle error responses
                     var errorMessage = await response.Content.ReadAsStringAsync();
                     await DisplayAlert("Error", $"Failed to register user: {errorMessage}", "OK");
                 }

@@ -57,7 +57,6 @@ C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\bin\D
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\News.xaml.g.cs
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\AccountSubscreen.xaml.g.cs
-C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\Adresses.xaml.g.cs
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\Carrito.xaml.g.cs
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\Checkout.xaml.g.cs
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\CouponScreen.xaml.g.cs
@@ -71,3 +70,5 @@ C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\D
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\Settings.xaml.g.cs
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\Categories.xaml.g.cs
 C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\Profile.xaml.g.cs
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\AddAddressView.xaml.g.cs
+C:\Users\Qizi\source\repos\musical-fishstick\App de Android\App de Android\obj\Debug\netstandard2.0\Views\AddressListView.xaml.g.cs

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_de_Android.Views.AddAddressView"
+             Title="Add Address">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Entry x:Name="StreetEntry" Placeholder="Street" />
+            <Entry x:Name="NumberEntry" Placeholder="Number" />
+            <Entry x:Name="NeighborhoodEntry" Placeholder="Neighborhood" />
+            <Entry x:Name="CityEntry" Placeholder="City" />
+            <Entry x:Name="StateEntry" Placeholder="State" />
+            <Button Text="Add Address" Clicked="OnAddAddressButtonClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

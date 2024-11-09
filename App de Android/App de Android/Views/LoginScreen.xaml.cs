@@ -20,7 +20,7 @@ namespace App_de_Android.Views
 
         private async void OnLoginClicked(object sender, EventArgs e)
         {
-            string apiUrl = "https://myowndomain.lol:5001/api/Auth/login";  // API URL
+            string apiUrl = "https://myowndomain.lol:5001/api/Auth/login";
 
             var httpClient = new HttpClient();
             var loginModel = new
@@ -31,21 +31,25 @@ namespace App_de_Android.Views
 
             try
             {
-                // Convert to JSON
                 var json = JsonConvert.SerializeObject(loginModel);
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-                // Send the POST request
                 var response = await httpClient.PostAsync(apiUrl, content);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    // Handle successful login
+                    var responseContent = await response.Content.ReadAsStringAsync();
+
+                    // Deserialize JSON response to extract the token
+                    var tokenObj = JsonConvert.DeserializeObject<Dictionary<string, string>>(responseContent);
+                    var token = tokenObj["token"];
+
+                    await SecureStorage.SetAsync("authToken", token);
+
                     await Navigation.PushAsync(new TabbedPage1());
                 }
                 else
                 {
-                    // Handle error responses
                     var errorMessage = await response.Content.ReadAsStringAsync();
                     await DisplayAlert("Error", $"Failed to login: {errorMessage}", "OK");
                 }
@@ -55,6 +59,7 @@ namespace App_de_Android.Views
                 await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
             }
         }
+
 
         private async void RegisterNewUser(object sender, EventArgs e)
         {

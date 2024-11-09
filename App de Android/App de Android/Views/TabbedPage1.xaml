@@ -7,7 +7,6 @@
             Title="TabbedPage1"
             BarBackgroundColor="Black"
             >
-    <!--Pages can be added as references or inline-->
     <locals:Home Title="Home"/>
     <locals:News Title="News" />
     <locals:Profile Title="Profile" />
