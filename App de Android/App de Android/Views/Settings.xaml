@@ -1,12 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App_de_Android.Views.Settings">
+             x:Class="App_de_Android.Views.Settings"
+             BackgroundColor="#FFF3E0">
+
+    
+    
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="20">
+
+            <!-- Dark Mode Toggle -->
+            <Label Text="Dark Mode" FontSize="Medium" />
+            <Switch x:Name="DarkModeSwitch" Toggled="OnDarkModeToggled"/>
+
+            <!-- Additional Settings -->
+            <Label Text="Notifications" FontSize="Medium" Margin="0,20,0,0"/>
+            <Switch x:Name="NotificationsSwitch"/>
+
+            <Label Text="Location Access" FontSize="Medium" Margin="0,20,0,0"/>
+            <Switch x:Name="LocationAccessSwitch"/>
+
+            <!-- Example Button to Save Settings -->
+            <Button Text="Save Settings" Margin="0,20,0,0" Clicked="OnSaveSettingsClicked"/>
         </StackLayout>
     </ContentPage.Content>
+    
+    
+    
+    
 </ContentPage>

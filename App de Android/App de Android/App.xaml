@@ -1,13 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:App_de_Android.Converters"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:App_de_Android.Converters"
              x:Class="App_de_Android.App">
     <Application.Resources>
+        <!-- Convertidores personalizados -->
         <local:InverseBooleanConverter x:Key="InverseBooleanConverter" />
-                <ResourceDictionary>
+        
+        <ResourceDictionary>
             <local:BooleanToColorConverter x:Key="BooleanToColorConverter" 
                                            TrueColor="Green" 
                                            FalseColor="Transparent"/>
+                                           
+            <!-- Colores dinámicos para temas claro y oscuro -->
+            <Color x:Key="BackgroundColorLight">#FFFFFF</Color>
+            <Color x:Key="BackgroundColorDark">#000000</Color>
+            <Color x:Key="TextColorLight">#000000</Color>
+            <Color x:Key="TextColorDark">#FFFFFF</Color>
+
+            <!-- Estilos de tema -->
+            <Style TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="{DynamicResource BackgroundColor}" />
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
