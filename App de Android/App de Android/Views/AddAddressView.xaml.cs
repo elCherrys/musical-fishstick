@@ -5,7 +5,6 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Text;
 using App_de_Android.Models;
-using App_de_Android.Utilities;
 using System;
 using System.Net.Http.Headers;
 using Xamarin.Essentials;
@@ -14,9 +13,9 @@ namespace App_de_Android.Views
 {
     public partial class AddAddressView : ContentPage
     {
-        private ObservableCollection<string> _addresses;
+        private ObservableCollection<AddressModel> _addresses;
 
-        public AddAddressView(ObservableCollection<string> addresses)
+        public AddAddressView(ObservableCollection<AddressModel> addresses)
         {
             InitializeComponent();
             _addresses = addresses;
@@ -41,6 +40,8 @@ namespace App_de_Android.Views
             if (success)
             {
                 await DisplayAlert("Success", "Address added successfully!", "OK");
+                // Optionally add the new address to the collection
+                _addresses.Add(addressModel);
             }
             else
             {
@@ -81,8 +82,5 @@ namespace App_de_Android.Views
                 return true;
             }
         }
-
-
-
     }
 }

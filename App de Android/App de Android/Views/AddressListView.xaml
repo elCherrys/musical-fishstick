@@ -1,19 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App_de_Android.Views.AddressListView">
+             xmlns:local="clr-namespace:App_de_Android.ViewModels"
+             x:Class="App_de_Android.Views.AddressListView"
+             x:Name="AddressListPage">
     <ContentPage.Content>
         <StackLayout Padding="20">
             <Label Text="Your Addresses" FontSize="Large" HorizontalOptions="Center" />
-            <ListView x:Name="AddressListViewControl">
-                <!-- Changed x:Name to AddressListViewControl -->
+            <ListView x:Name="AddressListViewControl" ItemsSource="{Binding Addresses}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding}" />
+                        <ViewCell>
+                            <StackLayout>
+                                <Label Text="{Binding Street}" />
+                                <Label Text="{Binding Number}" />
+                                <Label Text="{Binding Neighborhood}" />
+                                <Label Text="{Binding City}" />
+                                <Label Text="{Binding State}" />
+                            </StackLayout>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button Text="+" Clicked="OnAddAddressClicked" HorizontalOptions="End" />
+            <Button Text="+" Command="{Binding AddAddressCommand}" HorizontalOptions="End" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

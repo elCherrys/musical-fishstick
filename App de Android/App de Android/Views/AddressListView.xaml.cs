@@ -1,30 +1,20 @@
 ﻿using Xamarin.Forms;
-using System.Collections.ObjectModel;
 using System;
+using App_de_Android.ViewModels;
 
 namespace App_de_Android.Views
 {
     public partial class AddressListView : ContentPage
     {
-        public ObservableCollection<string> Addresses { get; set; }
+        private AddressListViewModel ViewModel;
 
         public AddressListView()
         {
             InitializeComponent();
-            Addresses = new ObservableCollection<string>
-            {
-                "123 Main St",
-                "456 Elm St",
-                "789 Oak St"
-            };
+            ViewModel = new AddressListViewModel(Navigation);
+            BindingContext = ViewModel;
 
-            AddressListViewControl.ItemsSource = Addresses; // Correct reference to the ListView control
-        }
-
-        private async void OnAddAddressClicked(object sender, EventArgs e)
-        {
-            var addAddressPage = new AddAddressView(Addresses);
-            await Navigation.PushModalAsync(addAddressPage);
+            ViewModel.LoadAddressesCommand.Execute(null);
         }
     }
 }
