@@ -46,7 +46,9 @@ namespace App_de_Android.Views
 
                     await SecureStorage.SetAsync("authToken", token);
 
-                    await Navigation.PushAsync(new TabbedPage1());
+                    //await Navigation.PushAsync(new TabbedPage1());
+
+                    (Application.Current as App).NavigateToHomePage();
                 }
                 else
                 {

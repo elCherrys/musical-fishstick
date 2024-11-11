@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App_de_Android.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,6 +13,11 @@ namespace App_de_Android
 
             MainPage = new NavigationPage(new Views.LoginScreen());
 
+        }
+
+        public void NavigateToHomePage()
+        {
+            MainPage = new NavigationPage(new Views.TabbedPage1());  // Cambia a la pantalla principal con el TabbedPage
         }
 
         protected override void OnStart()

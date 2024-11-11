@@ -19,6 +19,7 @@ namespace App_de_Android.Views
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             On<Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
+            //Children.Add(new DeliveryOrPickupScreen { Title = "Entrega/Recogida" });
         }
     }
 }

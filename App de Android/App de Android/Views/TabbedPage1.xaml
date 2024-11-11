@@ -5,10 +5,11 @@
             
             x:Class="App_de_Android.Views.TabbedPage1"
             Title="TabbedPage1"
-            BarBackgroundColor="Black"
+            BarBackgroundColor="White"
             >
     <locals:Home Title="Home"/>
-    <locals:News Title="News" />
-    <locals:Profile Title="Profile" />
-   
+    <locals:News Title="Noticias"/>
+    <locals:Carrito Title="Carrito"/>
+    <locals:Profile Title="Cuenta"/>
+
 </TabbedPage>

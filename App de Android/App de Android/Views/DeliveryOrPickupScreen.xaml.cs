@@ -15,6 +15,7 @@ namespace App_de_Android.Views
 		public DeliveryOrPickupScreen ()
 		{
 			InitializeComponent ();
-		}
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
 	}
 }
