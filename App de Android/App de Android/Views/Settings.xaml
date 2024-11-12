@@ -2,27 +2,65 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_de_Android.Views.Settings"
-             BackgroundColor="#FFF3E0">
-
-    
-    
-    
+             BackgroundColor="White">
     <ContentPage.Content>
         <StackLayout Padding="20">
 
-            <!-- Dark Mode Toggle -->
-            <Label Text="Dark Mode" FontSize="Medium" />
-            <Switch x:Name="DarkModeSwitch" Toggled="OnDarkModeToggled"/>
+            <Label Text="Configuracion" FontSize="32" Padding="0,0,0,50" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="#6D3805"/>
 
-            <!-- Additional Settings -->
-            <Label Text="Notifications" FontSize="Medium" Margin="0,20,0,0"/>
-            <Switch x:Name="NotificationsSwitch"/>
+            <!-- NOTIFICACIONES -->
+            <Frame CornerRadius="10" Padding="15" HasShadow="True" HeightRequest="90" BackgroundColor="White">
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60" />
+                        <!-- Columna para el ícono -->
+                        <ColumnDefinition Width="*" />
+                        <!-- Columna para el texto -->
+                        <ColumnDefinition Width="60" />
+                    </Grid.ColumnDefinitions>
+                    <!-- Additional Settings -->
+                    <Image Source="https://cdn.icon-icons.com/icons2/1993/PNG/512/alarm_alert_attention_bell_clock_notification_ring_icon_123203.png" HeightRequest="90" WidthRequest="90" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="Notifications" Grid.Column="1" VerticalTextAlignment="Center" FontSize="28" TextColor="Black" FontAttributes="Bold" Margin="20,0,0,0"/>
+                    <Switch x:Name="NotificationsSwitch" Margin="0,5,10,0"  Grid.Column="2" OnColor="#6D3805" ThumbColor="White" Scale="1.7"/>
+                </Grid>
+            </Frame>
 
-            <Label Text="Location Access" FontSize="Medium" Margin="0,20,0,0"/>
-            <Switch x:Name="LocationAccessSwitch"/>
+            <!-- BIOMETRICOS -->
+            <Frame CornerRadius="10" Padding="15" HasShadow="True" HeightRequest="90" BackgroundColor="White">
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60" />
+                        <!-- Columna para el ícono -->
+                        <ColumnDefinition Width="*" />
+                        <!-- Columna para el texto -->
+                        <ColumnDefinition Width="60" />
+                    </Grid.ColumnDefinitions>
+                    <!-- Additional Settings -->
+                    <Image Source="https://cdn.icon-icons.com/icons2/4066/PNG/512/protection_security_finger_thumb_biometric_identity_identification_fingerprint_touch_icon_258661.png" HeightRequest="90" WidthRequest="90" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="Biometricos" Grid.Column="1" VerticalTextAlignment="Center" FontSize="28" TextColor="Black" FontAttributes="Bold" Margin="20,0,0,0"/>
+                    <Switch x:Name="LocationAccessSwitch" Margin="0,5,10,0"  Grid.Column="2" OnColor="#6D3805" ThumbColor="White" Scale="1.7"/>
+                </Grid>
+            </Frame>
+
+            <!-- TEMA -->
+            <Frame CornerRadius="10" Padding="15" HasShadow="True" HeightRequest="90" BackgroundColor="White">
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="60" />
+                        <!-- Columna para el ícono -->
+                        <ColumnDefinition Width="*" />
+                        <!-- Columna para el texto -->
+                        <ColumnDefinition Width="60" />
+                    </Grid.ColumnDefinitions>
+                    <!-- Additional Settings -->
+                    <Image Source="https://cdn.icon-icons.com/icons2/3252/PNG/512/dark_theme_regular_icon_204499.png" HeightRequest="90" WidthRequest="90" Grid.Column="0" VerticalOptions="Center"/>
+                    <Label Text="Tema" Grid.Column="1" VerticalTextAlignment="Center" FontSize="28" TextColor="Black" FontAttributes="Bold" Margin="20,0,0,0"/>
+                    <Switch x:Name="DarkModeSwitch" Margin="0,5,10,0"  Grid.Column="2" OnColor="#6D3805" ThumbColor="White" Scale="1.7"/>
+                </Grid>
+            </Frame>
 
             <!-- Example Button to Save Settings -->
-            <Button Text="Save Settings" Margin="0,20,0,0" Clicked="OnSaveSettingsClicked"/>
+            <Button Text="Guardar Cambios" Margin="0,20,0,0" Clicked="OnSaveSettingsClicked" FontSize="18" BorderColor="Black" BorderWidth=".5" CornerRadius="20"/>
         </StackLayout>
     </ContentPage.Content>
     

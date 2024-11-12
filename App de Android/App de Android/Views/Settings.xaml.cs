@@ -16,6 +16,7 @@ namespace App_de_Android.Views
         public Settings()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
 
             // Load previously saved preferences
             DarkModeSwitch.IsToggled = Preferences.Get("isDarkMode", false);
@@ -38,7 +39,7 @@ namespace App_de_Android.Views
             Preferences.Set("notificationsEnabled", NotificationsSwitch.IsToggled);
             Preferences.Set("locationAccessEnabled", LocationAccessSwitch.IsToggled);
 
-            DisplayAlert("Settings", "Settings saved successfully!", "OK");
+            DisplayAlert("Settings", "Ajustes guardados correctamente!", "OK");
         }
     }
 }

@@ -2,12 +2,26 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_de_Android.Views.Profile"
-             BackgroundColor="#FFF3E0">
+             BackgroundColor="White">
 
     <StackLayout Padding="30" Spacing="20" VerticalOptions="Center">
 
+        <!-- PERFIL -->
+        <Frame CornerRadius="10" Padding="15" HasShadow="True" HeightRequest="90" BackgroundColor="#FF7220">
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="60" />
+                    <!-- Columna para el ícono -->
+                    <ColumnDefinition Width="*" />
+                    <!-- Columna para el texto -->
+                </Grid.ColumnDefinitions>
+                <Image Source="https://cdn.icon-icons.com/icons2/3066/PNG/512/user_person_profile_avatar_icon_190943.png" HeightRequest="50" WidthRequest="50" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="USERNAME" Grid.Column="1" VerticalTextAlignment="Center" FontSize="30" TextColor="White" FontAttributes="Bold"/>
+            </Grid>
+        </Frame>
+
         <!-- CUENTA -->
-        <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
+        <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60"  >
             <Frame.GestureRecognizers>
                 <TapGestureRecognizer Tapped="Frame1_Tapped" />
             </Frame.GestureRecognizers>
@@ -18,8 +32,8 @@
                     <ColumnDefinition Width="*" />
                     <!-- Columna para el texto -->
                 </Grid.ColumnDefinitions>
-                <Image Source="Images/profile.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
-                <Label Text="Cuenta" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
+                <Image Source="https://cdn.icon-icons.com/icons2/1830/PNG/512/userrating-115845_115824.png" HeightRequest="50" WidthRequest="50" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Cuenta" Grid.Column="1" VerticalTextAlignment="Center" FontSize="25" FontAttributes="Bold" TextColor="#6D3805" />
             </Grid>
         </Frame>
 
@@ -33,13 +47,10 @@
                     <ColumnDefinition Width="40" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="Images/address.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
-                <Label Text="Direcciones" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
+                <Image Source="https://cdn.icon-icons.com/icons2/1993/PNG/512/direction_gps_location_map_maps_navigation_pin_icon_123198.png" HeightRequest="50" WidthRequest="50" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Direcciones" Grid.Column="1" VerticalTextAlignment="Center" FontSize="25" FontAttributes="Bold" TextColor="#6D3805" />
             </Grid>
         </Frame>
-
-
-
 
         <!-- CUPONES -->
         <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
@@ -53,8 +64,8 @@
                     <ColumnDefinition Width="*" />
                     <!-- Columna para el texto -->
                 </Grid.ColumnDefinitions>
-                <Image Source="Images/cupons.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
-                <Label Text="Cupones" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
+                <Image Source="https://cdn.icon-icons.com/icons2/1993/PNG/512/buy_coupon_discount_sale_shop_shopping_voucher_icon_123190.png" HeightRequest="50" WidthRequest="50" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Cupones" Grid.Column="1" VerticalTextAlignment="Center" FontSize="25" FontAttributes="Bold" TextColor="#6D3805" />
             </Grid>
         </Frame>
 
@@ -68,13 +79,10 @@
                     <ColumnDefinition Width="40" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="Images/help.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
-                <Label Text="Ayuda" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
+                <Image Source="https://cdn.icon-icons.com/icons2/602/PNG/512/Help_icon-icons.com_55891.png" HeightRequest="50" WidthRequest="50" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Ayuda" Grid.Column="1" VerticalTextAlignment="Center" FontSize="25" FontAttributes="Bold" TextColor="#6D3805" />
             </Grid>
         </Frame>
-
-
-
 
         <!-- Configuracion -->
         <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
@@ -88,8 +96,8 @@
                     <ColumnDefinition Width="*" />
                     <!-- Columna para el texto -->
                 </Grid.ColumnDefinitions>
-                <Image Source="Images/settings.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
-                <Label Text="Configuracion" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
+                <Image Source="https://cdn.icon-icons.com/icons2/1337/PNG/512/settingscog_87317.png" HeightRequest="50" WidthRequest="50" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Configuracion" Grid.Column="1" VerticalTextAlignment="Center" FontSize="25" FontAttributes="Bold" TextColor="#6D3805" />
             </Grid>
         </Frame>
 
@@ -103,8 +111,8 @@
                     <ColumnDefinition Width="40" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Source="Images/exit.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
-                <Label Text="Salir" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
+                <Image Source="https://cdn.icon-icons.com/icons2/1769/PNG/512/4115235-exit-logout-sign-out_114030.png" HeightRequest="50" WidthRequest="50" Grid.Column="0" VerticalOptions="Center" />
+                <Label Text="Salir" Grid.Column="1" VerticalTextAlignment="Center" FontSize="25" FontAttributes="Bold" TextColor="#6D3805" />
             </Grid>
         </Frame>
 
