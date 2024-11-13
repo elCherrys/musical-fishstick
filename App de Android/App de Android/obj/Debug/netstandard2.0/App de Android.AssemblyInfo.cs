@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("App de Android")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76c42be94bc402398f9a9ee4531b0e699e7359b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ed46830d168444af11f4cd323660e9bbe1223b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("App de Android")]
 [assembly: System.Reflection.AssemblyTitleAttribute("App de Android")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

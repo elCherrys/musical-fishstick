@@ -2,24 +2,24 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_de_Android.Views.RegisterScreen"
-             BackgroundColor="#ff7220">
+             BackgroundColor="#D79169">
 
     <ContentPage.Content>
 
         <StackLayout Padding="30" VerticalOptions="Center">
 
-            <Label Text="Register" FontSize="40" HorizontalOptions="Center"/>
+            <Label Text="Registro de cuenta" FontSize="40" HorizontalOptions="Center" FontAttributes="Bold"/>
 
-            <Label Text="Enter your details to register" FontSize="18" HorizontalOptions="Center"/>
+            <Label Text="Ingresa los datos para registrarte!" FontSize="18" HorizontalOptions="Center" Padding="15"/>
 
             <Frame BackgroundColor="White" CornerRadius="5" Padding="5" HasShadow="True" HeightRequest="50">
-                <Entry x:Name="UsernameEntry" Placeholder="Username" TextChanged="EvaluateForm" FontSize="18" HorizontalOptions="Start" TextColor="Black" PlaceholderColor="LightGray"/>
+                <Entry x:Name="UsernameEntry" Placeholder="Username" TextChanged="EvaluateForm" FontSize="18" HorizontalOptions="Start" TextColor="Black" PlaceholderColor="Gray"/>
             </Frame>
 
             <BoxView HeightRequest="10"/>
 
             <Frame BackgroundColor="White" CornerRadius="5" Padding="5" HasShadow="True" HeightRequest="50">
-                <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email" TextChanged="EvaluateForm" FontSize="18" HorizontalOptions="Start" TextColor="Black" PlaceholderColor="LightGray"/>
+                <Entry x:Name="EmailEntry" Placeholder="Email" Keyboard="Email" TextChanged="EvaluateForm" FontSize="18" HorizontalOptions="Start" TextColor="Black" PlaceholderColor="Gray"/>
             </Frame>
 
             <BoxView HeightRequest="10"/>
@@ -27,13 +27,13 @@
             <Label x:Name="InvalidEmailLabel" TextColor="Red" IsVisible="False" Text="Invalid Email" HorizontalOptions="Center"/>
 
             <Frame BackgroundColor="White" CornerRadius="5" Padding="5" HasShadow="True" HeightRequest="50">
-                <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" TextChanged="EvaluateForm" FontSize="18" HorizontalOptions="Start" TextColor="Black" PlaceholderColor="LightGray"/>
+                <Entry x:Name="PasswordEntry" Placeholder="Password" IsPassword="True" TextChanged="EvaluateForm" FontSize="18" HorizontalOptions="Start" TextColor="Black" PlaceholderColor="Gray"/>
             </Frame>
 
             <BoxView HeightRequest="10"/>
 
             <Frame BackgroundColor="White" CornerRadius="5" Padding="5" HasShadow="True" HeightRequest="50">
-                <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm Password" IsPassword="True" TextChanged="EvaluateForm" FontSize="18" HorizontalOptions="Start" TextColor="Black" PlaceholderColor="LightGray"/>
+                <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm Password" IsPassword="True" TextChanged="EvaluateForm" FontSize="18" HorizontalOptions="Start" TextColor="Black" PlaceholderColor="Gray"/>
             </Frame>
 
             <BoxView HeightRequest="10"/>
@@ -48,7 +48,7 @@
 
             <Label x:Name="PasswordNumberLabel" TextColor="Red" IsVisible="False" Text="Password must contain at least one number" HorizontalOptions="Center"/>
 
-            <Button x:Name="RegisterButton" Text="Register" Clicked="RegisterUser" IsEnabled="False" Padding="5" CornerRadius="5"/>
+            <Button x:Name="RegisterButton" Text="Registrar" Clicked="RegisterUser" IsEnabled="False" Padding="5" CornerRadius="5"/>
 
         </StackLayout>
     </ContentPage.Content>
