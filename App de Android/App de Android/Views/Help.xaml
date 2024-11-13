@@ -27,9 +27,6 @@
 
             <!-- Primer Frame -->
             <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
-                <Frame.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Onhelp1Tapped" />
-                </Frame.GestureRecognizers>
                 <Grid ColumnSpacing="10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="40" />
@@ -47,9 +44,6 @@
 
             <!-- Segundo Frame -->
             <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
-                <Frame.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Onhelp2Tapped" />
-                </Frame.GestureRecognizers>
                 <Grid ColumnSpacing="10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="40" />
@@ -66,9 +60,6 @@
 
             <!-- Tercer Frame -->
             <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
-                <Frame.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="Onhelp3Tapped" />
-                </Frame.GestureRecognizers>
                 <Grid ColumnSpacing="10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="40" />

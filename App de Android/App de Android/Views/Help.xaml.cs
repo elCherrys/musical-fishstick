@@ -18,26 +18,7 @@ namespace App_de_Android.Views
             InitializeComponent();
         }
 
-        private async void Onhelp1Tapped(object sender, EventArgs e)
-        {
-            // Mostrar un mensaje al tocar el Frame
-            await DisplayAlert("¡Cupón 1 50% DE DESCUENTO", "Ingresa cup50", "OK");
-        }
+      
 
-        private async void Onhelp2Tapped(object sender, EventArgs e)
-        {
-            // Mostrar un mensaje al tocar el Frame
-            await DisplayAlert("¡Cupón 2 20% DE DESCUENTO!", "Ingresa cup20", "OK");
-        }
-        private async void Onhelp3Tapped(object sender, EventArgs e)
-        {
-            // Mostrar un mensaje al tocar el Frame
-            await DisplayAlert("¡Cupón 3 ENVIO GRATIS", "PRIMERPEDIDO.", "OK");
-        }
-
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-
-        }
     }
 }
