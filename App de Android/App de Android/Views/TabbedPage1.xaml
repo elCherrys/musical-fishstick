@@ -2,14 +2,28 @@
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
             xmlns:locals="clr-namespace:App_de_Android.Views"
-            
             x:Class="App_de_Android.Views.TabbedPage1"
             Title="TabbedPage1"
-            BarBackgroundColor="White"
-            >
-    <locals:Home Title="Home"/>
-    <locals:News Title="Noticias"/>
-    <locals:Carrito Title="Carrito"/>
-    <locals:Profile Title="Cuenta"/>
+            BarBackgroundColor="White">
+
+    <!-- Home con un ícono -->
+    <locals:Home Title="Home"
+                 IconImageSource="https://cdn.icon-icons.com/icons2/936/PNG/512/home_icon-icons.com_73532.png"/>
+    <!-- Aquí añades la ruta de la imagen para el icono -->
+
+    <!-- Noticias con un ícono -->
+    <locals:News Title="Noticias"
+                 IconImageSource="https://cdn.icon-icons.com/icons2/1771/PNG/512/4124866-journal-news-newsletter-newspaper-publication_114128.png"/>
+    <!-- Aquí añades la ruta de la imagen para el icono -->
+
+    <!-- Carrito con un ícono -->
+    <locals:Carrito Title="Carrito"
+                    IconImageSource="https://cdn.icon-icons.com/icons2/1144/PNG/512/shoppingcart_80945.png"/>
+    <!-- Aquí añades la ruta de la imagen para el icono -->
+
+    <!-- Cuenta con un ícono -->
+    <locals:Profile Title="Cuenta"
+                    IconImageSource="https://cdn.icon-icons.com/icons2/3553/PNG/512/account_profile_user_ecommerce_icon_224942.png"/>
+    <!-- Aquí añades la ruta de la imagen para el icono -->
 
 </TabbedPage>
