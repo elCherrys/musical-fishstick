@@ -6,17 +6,17 @@
              x:Name="AddressListPage">
     <ContentPage.Content>
         <StackLayout Padding="20">
-            <Label Text="Your Addresses" FontSize="Large" HorizontalOptions="Center" />
+            <Label Text="Tus Direcciones" FontSize="Large" HorizontalOptions="Center" />
             <ListView x:Name="AddressListViewControl" ItemsSource="{Binding Addresses}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout>
-                                <Label Text="{Binding Street}" />
-                                <Label Text="{Binding Number}" />
-                                <Label Text="{Binding Neighborhood}" />
-                                <Label Text="{Binding City}" />
-                                <Label Text="{Binding State}" />
+                                <Label Text="{Binding Street}" FontAttributes="Bold"/>
+                                <Label Text="{Binding Number}" FontAttributes="Bold"/>
+                                <Label Text="{Binding Neighborhood}" FontAttributes="Bold"/>
+                                <Label Text="{Binding City}" FontAttributes="Bold"/>
+                                <Label Text="{Binding State}" FontAttributes="Bold"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

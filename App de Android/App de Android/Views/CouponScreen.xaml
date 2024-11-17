@@ -2,110 +2,110 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_de_Android.Views.CouponScreen"
-             BackgroundColor="#ff7220">
+             BackgroundColor="White">
    
     <ContentPage.Content>
-        <StackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+        <StackLayout Padding="30" Spacing="20">
 
-
-
-
-            <!-- Frame de inicio-->
-            <Frame CornerRadius="3" Padding="15" HasShadow="True" HeightRequest="80">
-                <Grid ColumnSpacing="10">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="40" />
-                        <!-- Columna para el ícono -->
-                        <ColumnDefinition Width="*" />
-                        <!-- Columna para el texto -->
-                    </Grid.ColumnDefinitions>
-                    <Label Text="CENTRO DE CUPONES" Grid.Column="1" VerticalTextAlignment="Center" FontSize="30" />
-                </Grid>
-            </Frame>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <Label Text="Cupones" FontSize="32" Padding="0,0,0,50" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="#6D3805"/>
 
             <!-- Primer Frame -->
-            <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
-                <Frame.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnCupon1Tapped" />
-                </Frame.GestureRecognizers>
-                <Grid ColumnSpacing="10">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="40" />
-                        <!-- Columna para el ícono -->
-                        <ColumnDefinition Width="*" />
-                        <!-- Columna para el texto -->
-                    </Grid.ColumnDefinitions>
-                    <Image Source="Images/cupons.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
-                    <Label Text="Cupon 1" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
-                </Grid>
-            </Frame>
-            
-            
-            
+            <AbsoluteLayout BackgroundColor="Transparent" HeightRequest="120">
+                <Frame CornerRadius="10" Padding="15" HasShadow="True" BackgroundColor="#FF7220" AbsoluteLayout.LayoutBounds="0.5,0.5,1,1" AbsoluteLayout.LayoutFlags="All">
+                    <Grid ColumnSpacing="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="110" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="https://cdn.icon-icons.com/icons2/15/PNG/128/vegetables_cabbage_food_1808.png" HeightRequest="100" WidthRequest="100" Grid.Column="0" VerticalOptions="Center" Margin="13,0,0,0"/>
+
+                        <StackLayout Grid.Column="1" Spacing="5" VerticalOptions="CenterAndExpand">
+                            <Label Text="2x1 en Repollo" FontSize="23" TextColor="White" FontAttributes="Bold" />
+                            <Label Text="Frutas y Verduras" FontSize="17" TextColor="White" FontAttributes="Bold" />
+                            <Label Text="Válido hasta enero del 2025" FontSize="15" TextColor="#6D3805" FontAttributes="Bold" VerticalOptions="EndAndExpand" />
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+
+                <!-- Orificios -->
+                <Frame CornerRadius="50" BackgroundColor="White" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="-0.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <Frame CornerRadius="50" BackgroundColor="White" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="1.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
+            </AbsoluteLayout>
 
             <!-- Segundo Frame -->
-            <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
-                <Frame.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnCupon2Tapped" />
-                </Frame.GestureRecognizers>
-                <Grid ColumnSpacing="10">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="40" />
-                        <!-- Columna para el ícono -->
-                        <ColumnDefinition Width="*" />
-                        <!-- Columna para el texto -->
-                    </Grid.ColumnDefinitions>
-                    <Image Source="Images/cupons.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
-                    <Label Text="Cupon 2" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
-                </Grid>
-            </Frame>
-            
-            
-            
+            <AbsoluteLayout BackgroundColor="Transparent" HeightRequest="120">
+                <Frame CornerRadius="10" Padding="15" HasShadow="True" BackgroundColor="#FF7220" AbsoluteLayout.LayoutBounds="0.5,0.5,1,1" AbsoluteLayout.LayoutFlags="All">
+                    <Grid ColumnSpacing="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="110" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="https://cdn.icon-icons.com/icons2/881/PNG/512/Steak_icon-icons.com_68688.png" HeightRequest="100" WidthRequest="100" Grid.Column="0" VerticalOptions="Center" Margin="13,0,0,0"/>
+
+                        <StackLayout Grid.Column="1" Spacing="5" VerticalOptions="CenterAndExpand">
+                            <Label Text="15% OFF en Carnes" FontSize="23" TextColor="White" FontAttributes="Bold" />
+                            <Label Text="Carnes" FontSize="17" TextColor="White" FontAttributes="Bold" />
+                            <Label Text="Válido hasta enero del 2025" FontSize="15" TextColor="#6D3805" FontAttributes="Bold" VerticalOptions="EndAndExpand" />
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+
+                <!-- Orificios -->
+                <Frame CornerRadius="50" BackgroundColor="White" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="-0.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <Frame CornerRadius="50" BackgroundColor="White" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="1.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
+            </AbsoluteLayout>
+
             <!-- Tercer Frame -->
-            <Frame CornerRadius="20" Padding="15" HasShadow="True" HeightRequest="60">
-                <Frame.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnCupon3Tapped" />
-                </Frame.GestureRecognizers>
-                <Grid ColumnSpacing="10">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="40" />
-                        <!-- Columna para el ícono -->
-                        <ColumnDefinition Width="*" />
-                        <!-- Columna para el texto -->
-                    </Grid.ColumnDefinitions>
-                    <Image Source="Images/cupons.png" HeightRequest="32" WidthRequest="32" Grid.Column="0" VerticalOptions="Center" />
-                    <Label Text="Cupon 3" Grid.Column="1" VerticalTextAlignment="Center" FontSize="18" />
-                </Grid>
-            </Frame>
+            <AbsoluteLayout BackgroundColor="Transparent" HeightRequest="140">
+                <Frame CornerRadius="10" Padding="15" HasShadow="True" BackgroundColor="#FF7220" AbsoluteLayout.LayoutBounds="0.5,0.5,1,1" AbsoluteLayout.LayoutFlags="All">
+                    <Grid ColumnSpacing="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="110" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
 
+                        <Image Source="https://cdn.icon-icons.com/icons2/549/PNG/512/1455739769_Kitchen_Bold_Line_Color_Mix-02_icon-icons.com_53397.png" HeightRequest="100" WidthRequest="100" Grid.Column="0" VerticalOptions="Center" Margin="13,0,0,0"/>
 
+                        <StackLayout Grid.Column="1" Spacing="5" VerticalOptions="CenterAndExpand">
+                            <Label Text="El segundo a mitad de precio" FontSize="23" TextColor="White" FontAttributes="Bold" />
+                            <Label Text="Lácteos" FontSize="17" TextColor="White" FontAttributes="Bold" />
+                            <Label Text="Válido hasta enero del 2025" FontSize="15" TextColor="#6D3805" FontAttributes="Bold" VerticalOptions="EndAndExpand" />
+                        </StackLayout>
+                    </Grid>
+                </Frame>
 
+                <!-- Orificios -->
+                <Frame CornerRadius="50" BackgroundColor="White" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="-0.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <Frame CornerRadius="50" BackgroundColor="White" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="1.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
+            </AbsoluteLayout>
 
+            <!-- Cuarto Frame -->
+            <AbsoluteLayout BackgroundColor="Transparent" HeightRequest="140">
+                <Frame CornerRadius="10" Padding="15" HasShadow="True" BackgroundColor="#FF7220" AbsoluteLayout.LayoutBounds="0.5,0.5,1,1" AbsoluteLayout.LayoutFlags="All">
+                    <Grid ColumnSpacing="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="110" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
 
+                        <Image Source="https://cdn.icon-icons.com/icons2/1864/PNG/512/iconfinder-food-and-restaurantorganicveganhealthy-fooddietvegetarianbananafoodapplefruit-4394758_119511.png" HeightRequest="100" WidthRequest="100" Grid.Column="0" VerticalOptions="Center" Margin="13,0,0,0"/>
 
-          
+                        <StackLayout Grid.Column="1" Spacing="5" VerticalOptions="CenterAndExpand">
+                            <Label Text="10% OFF en Cítricos" FontSize="23" TextColor="White" FontAttributes="Bold" />
+                            <Label Text="Frutas y Verduras" FontSize="17" TextColor="White" FontAttributes="Bold" />
+                            <Label Text="Válido hasta enero del 2025" FontSize="15" TextColor="#6D3805" FontAttributes="Bold" VerticalOptions="EndAndExpand" />
+                        </StackLayout>
+                    </Grid>
+                </Frame>
+
+                <!-- Orificios -->
+                <Frame CornerRadius="50" BackgroundColor="White" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="-0.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <Frame CornerRadius="50" BackgroundColor="White" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="1.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
+            </AbsoluteLayout>
+
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>

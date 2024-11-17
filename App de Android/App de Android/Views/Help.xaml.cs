@@ -16,6 +16,7 @@ namespace App_de_Android.Views
         public Help()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
       

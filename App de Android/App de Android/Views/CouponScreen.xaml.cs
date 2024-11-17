@@ -10,23 +10,30 @@ namespace App_de_Android.Views
         public CouponScreen()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         private async void OnCupon1Tapped(object sender, EventArgs e)
         {
             // Mostrar un mensaje al tocar el Frame
-            await DisplayAlert("¡Cupón 1 50% DE DESCUENTO", "Ingresa cup50", "OK");
+            await DisplayAlert("¡Cupón → 2x1 en Repollo!", "Aplicado!", "OK");
         }
 
         private async void OnCupon2Tapped(object sender, EventArgs e)
         {
             // Mostrar un mensaje al tocar el Frame
-            await DisplayAlert("¡Cupón 2 20% DE DESCUENTO!", "Ingresa cup20", "OK");
+            await DisplayAlert("¡Cupón → 15% OFF en Carnes!", "Aplicado!", "OK");
         }
         private async void OnCupon3Tapped(object sender, EventArgs e)
         {
             // Mostrar un mensaje al tocar el Frame
-            await DisplayAlert("¡Cupón 3 ENVIO GRATIS", "PRIMERPEDIDO.", "OK");
+            await DisplayAlert("¡Cupón → El segundo a mitad de precio!", "Aplicado!", "OK");
+        }
+
+        private async void OnCupon4Tapped(object sender, EventArgs e)
+        {
+            // Mostrar un mensaje al tocar el Frame
+            await DisplayAlert("¡Cupón → 10% OFF en Cítricos", "Aplicado!", "OK");
         }
 
     }

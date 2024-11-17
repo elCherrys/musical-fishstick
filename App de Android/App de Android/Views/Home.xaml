@@ -5,17 +5,27 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="#FFF3E0">
             <!-- Top Frame for Address Label -->
-            <Frame HeightRequest="150" HasShadow="False" BackgroundColor="#FFF3E0">
-                <Label Text="Address" TextColor="Black" HorizontalOptions="Center" FontSize="30" VerticalOptions="Center"/>
+            <Frame HeightRequest="150" HasShadow="False" BackgroundColor="#FFF3E0" HorizontalOptions="Center" Padding="0,0,50,0">
                 <Frame.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding NavigateToAddressCommand}"/>
                 </Frame.GestureRecognizers>
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="https://cdn.icon-icons.com/icons2/653/PNG/512/locate_gps_navigation_pin_point_location_icon-icons.com_59906.png" HeightRequest="40" WidthRequest="40" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="End" Margin="13,0,0,0"/>
+
+                    <Label Text="Direccion" TextColor="Black" FontAttributes="Bold" HorizontalOptions="Start" FontSize="30" VerticalOptions="Center" Grid.Column="1"/>
+
+                </Grid>
             </Frame>
 
             <!-- Categories Header with View All -->
             <StackLayout Orientation="Horizontal" Padding="10,0,0,15">
-                <Label Text="Categories" TextColor="Black" FontSize="25"/>
-                <Label Text="View All" TextColor="Black" FontSize="20" Padding="225,5,0,0">
+                <Label Text="Categorias" TextColor="Black" FontSize="22" FontAttributes="Bold"/>
+                <Label Text="Ver más" TextColor="#FF7220" FontSize="18" Padding="190,5,0,0" FontAttributes="Bold">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding NavigateToCategoriesCommand}"/>
                     </Label.GestureRecognizers>
@@ -48,8 +58,8 @@
 
             <!-- Products Header with View All -->
             <StackLayout Orientation="Horizontal" Padding="10,0,0,15">
-                <Label Text="Products" TextColor="Black" FontSize="25"/>
-                <Label Text="View All" TextColor="Black" FontSize="20" Padding="240,5,0,0">
+                <Label Text="Productos Porpulares" TextColor="Black" FontSize="22" FontAttributes="Bold"/>
+                <Label Text="Ver más" TextColor="#FF7220" FontSize="18" Padding="90,5,0,0" FontAttributes="Bold">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding NavigateToProductsCommand}"/>
                     </Label.GestureRecognizers>
