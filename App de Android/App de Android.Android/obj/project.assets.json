@@ -3479,24 +3479,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\thefe\\.nuget\\packages\\": {},
+    "C:\\Users\\Aleja\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thefe\\Documents\\EquipoProgra\\GITHUB5\\musical-fishstick\\App de Android\\App de Android.Android\\App de Android.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Aleja\\OneDrive\\Documentos\\Facpya\\Programacion\\Progra Aldo\\musical-fishstick\\App de Android\\App de Android.Android\\App de Android.Android.csproj",
       "projectName": "App de Android.Android",
-      "projectPath": "C:\\Users\\thefe\\Documents\\EquipoProgra\\GITHUB5\\musical-fishstick\\App de Android\\App de Android.Android\\App de Android.Android.csproj",
-      "packagesPath": "C:\\Users\\thefe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thefe\\Documents\\EquipoProgra\\GITHUB5\\musical-fishstick\\App de Android\\App de Android.Android\\obj\\",
+      "projectPath": "C:\\Users\\Aleja\\OneDrive\\Documentos\\Facpya\\Programacion\\Progra Aldo\\musical-fishstick\\App de Android\\App de Android.Android\\App de Android.Android.csproj",
+      "packagesPath": "C:\\Users\\Aleja\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aleja\\OneDrive\\Documentos\\Facpya\\Programacion\\Progra Aldo\\musical-fishstick\\App de Android\\App de Android.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\thefe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aleja\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3510,8 +3510,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\thefe\\Documents\\EquipoProgra\\GITHUB5\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj": {
-              "projectPath": "C:\\Users\\thefe\\Documents\\EquipoProgra\\GITHUB5\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj"
+            "C:\\Users\\Aleja\\OneDrive\\Documentos\\Facpya\\Programacion\\Progra Aldo\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj": {
+              "projectPath": "C:\\Users\\Aleja\\OneDrive\\Documentos\\Facpya\\Programacion\\Progra Aldo\\musical-fishstick\\App de Android\\App de Android\\App de Android.csproj"
             }
           }
         }
