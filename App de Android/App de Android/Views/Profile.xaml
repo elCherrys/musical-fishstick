@@ -4,7 +4,28 @@
              x:Class="App_de_Android.Views.Profile"
              BackgroundColor="White">
 
-    <StackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+    <StackLayout Padding="30" Spacing="10" VerticalOptions="Center">
+
+        <Frame VerticalOptions="Center" HorizontalOptions="Center" Padding="3,-10,0,-25" Margin="0,-10,320,0" BorderColor="Transparent">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnBackButtonClicked" />
+            </Frame.GestureRecognizers>
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="400" />
+                </Grid.ColumnDefinitions>
+
+                <Image Source="https://cdn.icon-icons.com/icons2/2131/PNG/512/back_arrow_icon_131563.png" 
+                       HeightRequest="25" 
+                       WidthRequest="25" 
+                       HorizontalOptions="StartAndExpand"
+                       Grid.Column="0"
+                       Margin="0,0,0,15"/>
+
+                <Label Text="" FontSize="32" Padding="0,0,30,40" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="#6D3805" Grid.Column="1"/>
+            </Grid>
+        </Frame>
 
         <!-- PERFIL -->
         <Frame CornerRadius="10" Padding="15" HasShadow="True" HeightRequest="90" BackgroundColor="#FF7220">

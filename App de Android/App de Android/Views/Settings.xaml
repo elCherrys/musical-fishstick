@@ -4,12 +4,32 @@
              x:Class="App_de_Android.Views.Settings"
              BackgroundColor="White">
     <ContentPage.Content>
-        <StackLayout Padding="20">
+        <StackLayout Padding="20" VerticalOptions="Start">
 
-            <Label Text="Configuracion" FontSize="32" Padding="0,0,0,50" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="#6D3805"/>
+            <Frame VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="0" BorderColor="Transparent">
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Frame BorderColor="Transparent" BackgroundColor="Transparent" Grid.Column="0" Padding="0" HasShadow="False" >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnBackButtonClicked" />
+                        </Frame.GestureRecognizers>
+                        <Image Source="https://cdn.icon-icons.com/icons2/2131/PNG/512/back_arrow_icon_131563.png" 
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               HeightRequest="25" 
+                               WidthRequest="25" />
+                    </Frame>
+
+                    <Label Text="Configuracion" FontSize="32" Padding="0,0,30,0" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="#6D3805" Grid.Column="1"/>
+                </Grid>
+            </Frame>
 
             <!-- NOTIFICACIONES -->
-            <Frame CornerRadius="10" Padding="15" HasShadow="True" HeightRequest="90" BackgroundColor="White">
+            <Frame CornerRadius="10" Padding="15" HasShadow="True" HeightRequest="90" BackgroundColor="White" Margin= "0,60,0,0">
                 <Grid ColumnSpacing="10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="60" />

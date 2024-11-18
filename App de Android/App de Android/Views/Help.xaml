@@ -5,88 +5,111 @@
              BackgroundColor="White">
 
     <ContentPage.Content>
-        <StackLayout Padding="30" Spacing="20" VerticalOptions="Start">
+        <AbsoluteLayout>
 
-            <Label Text="Ayuda" FontSize="32" Padding="0,0,0,60" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="#6D3805"/>
+            <!-- Contenido principal de la página -->
+            <StackLayout Padding="30" Spacing="20" VerticalOptions="Start">
 
-            <!-- Imagen grande en el centro -->
-            <Image Source="https://cdn.icon-icons.com/icons2/3723/PNG/512/communication_assistance_help_support_service_information_icon_230472.png" 
-                   HeightRequest="200" 
-                   WidthRequest="200" 
-                   HorizontalOptions="Center" />
+                <Frame VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="0" BorderColor="Transparent">
+                    <Grid ColumnSpacing="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
 
-            <!-- Texto "Contáctanos" -->
-            <Label Text="Contáctanos" 
-                   FontSize="34" 
-                   FontAttributes="Bold" 
-                   HorizontalOptions="Center" 
-                   TextColor="#6D3805" />
+                        <Frame BorderColor="Transparent" BackgroundColor="Transparent" Grid.Column="0" Padding="0" HasShadow="False" >
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnBackButtonClicked" />
+                            </Frame.GestureRecognizers>
+                            <Image Source="https://cdn.icon-icons.com/icons2/2131/PNG/512/back_arrow_icon_131563.png" 
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   HeightRequest="25" 
+                                   WidthRequest="25" />
+                        </Frame>
 
-            <!-- Descripción de atención -->
-            <Label Text="Estamos para atenderte las 24 horas de Lunes a Domingo" 
-                   FontSize="16" 
-                   HorizontalOptions="Center"
-                   Padding="40,0,20,0"
-                   TextColor="#FF7220"
-                   FontAttributes="Bold" />
+                        <Label Text="Ayuda" FontSize="32" Padding="0,0,30,0" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="#6D3805" Grid.Column="1"/>
+                    </Grid>
+                </Frame>
 
-            <!-- Secciones en 3 columnas -->
-            <Grid ColumnSpacing="20" RowSpacing="20" Padding="0,60,0,0" HorizontalOptions="FillAndExpand">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
+                <!-- Imagen grande en el centro -->
+                <Image Source="https://cdn.icon-icons.com/icons2/3723/PNG/512/communication_assistance_help_support_service_information_icon_230472.png" 
+                       HeightRequest="200" 
+                       WidthRequest="200" 
+                       HorizontalOptions="Center" 
+                       Margin= "0,60,0,0"/>
 
-                <!-- Columna 1 -->
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="100"/>
-                    <ColumnDefinition Width="100"/>
-                    <ColumnDefinition Width="100"/>
-                </Grid.ColumnDefinitions>
+                <!-- Texto "Contáctanos" -->
+                <Label Text="Contáctanos" 
+                       FontSize="34" 
+                       FontAttributes="Bold" 
+                       HorizontalOptions="Center" 
+                       TextColor="#6D3805" />
 
-                <!-- Sección 1 -->
-                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="0">
-                    <Image Source="https://cdn.icon-icons.com/icons2/622/PNG/512/whatsapp-logo_icon-icons.com_57054.png" 
-                           HeightRequest="70" 
-                           WidthRequest="70" 
-                           HorizontalOptions="Center" />
-                    <Label Text="Chat por Whatsapp" 
-                           FontSize="14" 
-                           TextColor="#6D3805" 
-                           FontAttributes="Bold"
-                           HorizontalOptions="Center" 
-                           Padding="20,0,0,0"/>
-                </StackLayout>
+                <!-- Descripción de atención -->
+                <Label Text="Estamos para atenderte las 24 horas de Lunes a Domingo" 
+                       FontSize="16" 
+                       HorizontalOptions="Center"
+                       Padding="40,0,20,0"
+                       TextColor="#FF7220"
+                       FontAttributes="Bold" />
 
-                <!-- Sección 2 -->
-                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="1">
-                    <Image Source="https://cdn.icon-icons.com/icons2/3814/PNG/512/attention_exclamation_notification_bell_icon_233477.png" 
-                           HeightRequest="80" 
-                           WidthRequest="80" 
-                           HorizontalOptions="Center" />
-                    <Label Text="Centro de Atencion" 
-                           FontSize="14" 
-                           TextColor="#6D3805" 
-                           FontAttributes="Bold"
-                           HorizontalOptions="Center" 
-                           Padding="20,0,0,0"/>
-                </StackLayout>
+                <!-- Secciones en 3 columnas -->
+                <Grid ColumnSpacing="20" RowSpacing="20" Padding="0,60,0,0" HorizontalOptions="FillAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
 
-                <!-- Sección 3 -->
-                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="2">
-                    <Image Source="https://cdn.icon-icons.com/icons2/2031/PNG/512/chat_support_icon_124065.png" 
-                           HeightRequest="80" 
-                           WidthRequest="80" 
-                           HorizontalOptions="Center" />
-                    <Label Text="Chat de Soporte" 
-                           FontSize="14" 
-                           TextColor="#6D3805" 
-                           FontAttributes="Bold"
-                           HorizontalOptions="Center" 
-                           Padding="20,0,0,0"/>
-                </StackLayout>
+                    <!-- Columna 1 -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
 
-            </Grid>
+                    <!-- Sección 1 -->
+                    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="0">
+                        <Image Source="https://cdn.icon-icons.com/icons2/622/PNG/512/whatsapp-logo_icon-icons.com_57054.png" 
+                               HeightRequest="70" 
+                               WidthRequest="70" 
+                               HorizontalOptions="Center" />
+                        <Label Text="Chat por Whatsapp" 
+                               FontSize="14" 
+                               TextColor="#6D3805" 
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center" 
+                               Padding="20,0,0,0"/>
+                    </StackLayout>
 
-        </StackLayout>
+                    <!-- Sección 2 -->
+                    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="1">
+                        <Image Source="https://cdn.icon-icons.com/icons2/3814/PNG/512/attention_exclamation_notification_bell_icon_233477.png" 
+                               HeightRequest="80" 
+                               WidthRequest="80" 
+                               HorizontalOptions="Center" />
+                        <Label Text="Centro de Atencion" 
+                               FontSize="14" 
+                               TextColor="#6D3805" 
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center" 
+                               Padding="20,0,0,0"/>
+                    </StackLayout>
+
+                    <!-- Sección 3 -->
+                    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Column="2">
+                        <Image Source="https://cdn.icon-icons.com/icons2/2031/PNG/512/chat_support_icon_124065.png" 
+                               HeightRequest="80" 
+                               WidthRequest="80" 
+                               HorizontalOptions="Center" />
+                        <Label Text="Chat de Soporte" 
+                               FontSize="14" 
+                               TextColor="#6D3805" 
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center" 
+                               Padding="20,0,0,0"/>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

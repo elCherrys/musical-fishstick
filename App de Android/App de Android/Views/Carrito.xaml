@@ -3,40 +3,49 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_de_Android.Views.Carrito">
 
-    <AbsoluteLayout>
+    <AbsoluteLayout >
+        <StackLayout Padding="30" Spacing="20" VerticalOptions="Start">
+            <Frame VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="0" BorderColor="Transparent">
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
 
-        <!-- Sección de productos en la parte superior -->
-        <StackLayout Spacing="0" Padding="20,0" 
-                     AbsoluteLayout.LayoutFlags="All" 
-                     AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
-            <Label Text="Productos" 
-                   FontSize="32" 
-                   Padding="0,20,0,0" 
-                   FontAttributes="Bold" 
-                   VerticalOptions="StartAndExpand" 
-                   HorizontalOptions="CenterAndExpand" 
-                   TextColor="#ff6d00"/>
+                    <Frame BorderColor="Transparent" BackgroundColor="Transparent" Grid.Column="0" Padding="0" HasShadow="False" >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnBackButtonClicked" />
+                        </Frame.GestureRecognizers>
+                        <Image Source="https://cdn.icon-icons.com/icons2/2131/PNG/512/back_arrow_icon_131563.png" 
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               HeightRequest="25" 
+                               WidthRequest="25" />
+                    </Frame>
+
+                    <Label Text="Productos" FontSize="32" Padding="0,0,30,0" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="#ff6d00" Grid.Column="1"/>
+                </Grid>
+            </Frame>
+
+            <!-- Botón Siguiente centrado y al final de la pantalla -->
+            <Frame CornerRadius="25" 
+                   Padding="60,10" 
+                   BackgroundColor="#ff6d00" 
+                   AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                   AbsoluteLayout.LayoutBounds="0.5, 0.93, 0.8, AutoSize">
+                <Grid>
+                    <Label Text="Siguiente"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           TextColor="White"
+                           FontSize="22"
+                           FontAttributes="Bold"/>
+                </Grid>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnNextTapped"/>
+                </Frame.GestureRecognizers>
+            </Frame>
         </StackLayout>
-
-        <!-- Botón Siguiente centrado y al final de la pantalla -->
-        <Frame CornerRadius="25" 
-               Padding="60,10" 
-               BackgroundColor="#ff6d00" 
-               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
-               AbsoluteLayout.LayoutBounds="0.5, 0.93, 0.8, AutoSize">
-            <Grid>
-                <Label Text="Siguiente"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"
-                       TextColor="White"
-                       FontSize="22"
-                       FontAttributes="Bold"/>
-            </Grid>
-            <Frame.GestureRecognizers>
-                <TapGestureRecognizer Tapped="OnNextTapped"/>
-            </Frame.GestureRecognizers>
-        </Frame>
-
     </AbsoluteLayout>
 
 </ContentPage>

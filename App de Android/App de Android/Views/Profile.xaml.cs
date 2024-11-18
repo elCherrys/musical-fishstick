@@ -15,10 +15,10 @@ namespace App_de_Android.Views
             InitializeComponent();
         }
 
-        private void Frame1_Tapped(object sender, EventArgs e)
+        private async void Frame1_Tapped(object sender, EventArgs e)
         {
             // Lógica para el marco 1
-            DisplayAlert("Tapped", "Marco 1 fue tocado", "OK");
+            await Navigation.PushAsync(new Cuenta());
         }
 
         private void Frame2_Tapped(object sender, EventArgs e)
@@ -51,11 +51,11 @@ namespace App_de_Android.Views
             await Navigation.PushAsync(new LoginScreen());
         }
 
-
-
-
-
-
+        private async void OnBackButtonClicked(object sender, EventArgs e)
+        {
+            // Regresar a la página anterior
+            await Navigation.PushAsync(new Views.TabbedPage1());  // Usar PopAsync para regresar a la página anterior
+        }
 
     }
 }

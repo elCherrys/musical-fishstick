@@ -25,11 +25,11 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=638674611108670233
+_nugetassetstimestamp=638674648787890475
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a
 x86
 x86_64
 androidmanifestplaceholders=
-projectfullpath=c:\users\aleja\onedrive\documentos\facpya\programacion\progra aldo\musical-fishstick\app de android\app de android.android\app de android.android.csproj
+projectfullpath=c:\users\thefe\documents\equipoprogra\github6\musical-fishstick\app de android\app de android.android\app de android.android.csproj

@@ -5,13 +5,36 @@
              BackgroundColor="White">
    
     <ContentPage.Content>
-        <StackLayout Padding="30" Spacing="20">
+        <StackLayout Padding="30" Spacing="20" VerticalOptions="Start" >
 
-            <Label Text="Cupones" FontSize="32" Padding="0,0,0,50" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="#6D3805"/>
+            <Frame VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="0" BorderColor="Transparent">
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Frame BorderColor="Transparent" BackgroundColor="Transparent" Grid.Column="0" Padding="0" HasShadow="False" >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnBackButtonClicked" />
+                        </Frame.GestureRecognizers>
+                        <Image Source="https://cdn.icon-icons.com/icons2/2131/PNG/512/back_arrow_icon_131563.png" 
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               HeightRequest="25" 
+                               WidthRequest="25" />
+                    </Frame>
+
+                    <Label Text="Cupones" FontSize="32" Padding="0,0,30,0" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="#6D3805" Grid.Column="1"/>
+                </Grid>
+            </Frame>
 
             <!-- Primer Frame -->
             <AbsoluteLayout BackgroundColor="Transparent" HeightRequest="120">
                 <Frame CornerRadius="10" Padding="15" HasShadow="True" BackgroundColor="#FF7220" AbsoluteLayout.LayoutBounds="0.5,0.5,1,1" AbsoluteLayout.LayoutFlags="All">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCupon1Tapped" />
+                    </Frame.GestureRecognizers>
                     <Grid ColumnSpacing="10">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="110" />
@@ -29,13 +52,16 @@
                 </Frame>
 
                 <!-- Orificios -->
-                <Frame CornerRadius="50" BackgroundColor="White" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="-0.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
-                <Frame CornerRadius="50" BackgroundColor="White" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="1.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <Frame CornerRadius="50" BackgroundColor="White" BorderColor="Transparent" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="-0.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <Frame CornerRadius="50" BackgroundColor="White" BorderColor="Transparent" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="1.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
             </AbsoluteLayout>
 
             <!-- Segundo Frame -->
             <AbsoluteLayout BackgroundColor="Transparent" HeightRequest="120">
                 <Frame CornerRadius="10" Padding="15" HasShadow="True" BackgroundColor="#FF7220" AbsoluteLayout.LayoutBounds="0.5,0.5,1,1" AbsoluteLayout.LayoutFlags="All">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCupon2Tapped" />
+                    </Frame.GestureRecognizers>
                     <Grid ColumnSpacing="10">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="110" />
@@ -53,13 +79,16 @@
                 </Frame>
 
                 <!-- Orificios -->
-                <Frame CornerRadius="50" BackgroundColor="White" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="-0.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
-                <Frame CornerRadius="50" BackgroundColor="White" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="1.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <Frame CornerRadius="50" BackgroundColor="White" BorderColor="Transparent" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="-0.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <Frame CornerRadius="50" BackgroundColor="White" BorderColor="Transparent" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="1.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
             </AbsoluteLayout>
 
             <!-- Tercer Frame -->
             <AbsoluteLayout BackgroundColor="Transparent" HeightRequest="140">
                 <Frame CornerRadius="10" Padding="15" HasShadow="True" BackgroundColor="#FF7220" AbsoluteLayout.LayoutBounds="0.5,0.5,1,1" AbsoluteLayout.LayoutFlags="All">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCupon3Tapped" />
+                    </Frame.GestureRecognizers>
                     <Grid ColumnSpacing="10">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="110" />
@@ -77,13 +106,16 @@
                 </Frame>
 
                 <!-- Orificios -->
-                <Frame CornerRadius="50" BackgroundColor="White" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="-0.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
-                <Frame CornerRadius="50" BackgroundColor="White" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="1.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <Frame CornerRadius="50" BackgroundColor="White" BorderColor="Transparent" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="-0.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <Frame CornerRadius="50" BackgroundColor="White" BorderColor="Transparent" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="1.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
             </AbsoluteLayout>
 
             <!-- Cuarto Frame -->
             <AbsoluteLayout BackgroundColor="Transparent" HeightRequest="140">
                 <Frame CornerRadius="10" Padding="15" HasShadow="True" BackgroundColor="#FF7220" AbsoluteLayout.LayoutBounds="0.5,0.5,1,1" AbsoluteLayout.LayoutFlags="All">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnCupon4Tapped" />
+                    </Frame.GestureRecognizers>
                     <Grid ColumnSpacing="10">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="110" />
@@ -101,8 +133,8 @@
                 </Frame>
 
                 <!-- Orificios -->
-                <Frame CornerRadius="50" BackgroundColor="White" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="-0.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
-                <Frame CornerRadius="50" BackgroundColor="White" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="1.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <Frame CornerRadius="50" BackgroundColor="White" BorderColor="Transparent" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="-0.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
+                <Frame CornerRadius="50" BackgroundColor="White" BorderColor="Transparent" HasShadow="False" HeightRequest="30" WidthRequest="30" AbsoluteLayout.LayoutBounds="1.05,0.5,30,30" AbsoluteLayout.LayoutFlags="PositionProportional" />
             </AbsoluteLayout>
 
         </StackLayout>

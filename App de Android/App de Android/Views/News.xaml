@@ -6,7 +6,28 @@
 
         <!-- Background content (existing frames) -->
         <StackLayout Spacing="0" Padding="20,0" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
-            <Label Text="Noticias" FontSize="32" Padding="0,20,0,0" FontAttributes="Bold" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" TextColor="#ff6d00"/>
+
+            <Frame VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="0" BorderColor="Transparent">
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Frame BorderColor="Transparent" BackgroundColor="Transparent" Grid.Column="0" Padding="0" HasShadow="False" >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnBackButtonClicked" />
+                        </Frame.GestureRecognizers>
+                        <Image Source="https://cdn.icon-icons.com/icons2/2131/PNG/512/back_arrow_icon_131563.png" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   HeightRequest="25" 
+                   WidthRequest="25" />
+                    </Frame>
+
+                    <Label Text="Noticias" FontSize="32" Padding="0,0,30,0" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="#ff6d00" Grid.Column="1"/>
+                </Grid>
+            </Frame>
 
             <!-- Primer Frame -->
             <Frame CornerRadius="20" Padding="0" HasShadow="True" HeightRequest="200" VerticalOptions="StartAndExpand">

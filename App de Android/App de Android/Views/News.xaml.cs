@@ -119,5 +119,11 @@ namespace App_de_Android.Views
                 return null;
             }
         }
+
+        private async void OnBackButtonClicked(object sender, EventArgs e)
+        {
+            // Regresar a la página anterior
+            await Navigation.PushAsync(new Views.TabbedPage1());  // Usar PopAsync para regresar a la página anterior
+        }
     }
 }
