@@ -3,34 +3,67 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_de_Android.Views.Carrito">
 
-    <AbsoluteLayout >
-        <StackLayout Padding="30" Spacing="20" VerticalOptions="Start">
-            <Frame VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="0" BorderColor="Transparent">
+    <AbsoluteLayout>
+        <StackLayout Padding="0" Spacing="20" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+            <Frame VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Padding="0" BorderColor="Transparent">
                 <Grid ColumnSpacing="10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="30" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
 
-                    <Frame BorderColor="Transparent" BackgroundColor="Transparent" Grid.Column="0" Padding="0" HasShadow="False" >
+                    <Frame BorderColor="Transparent" BackgroundColor="Transparent" Grid.Column="0" Padding="0" HasShadow="False">
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnBackButtonClicked" />
                         </Frame.GestureRecognizers>
-                        <Image Source="https://cdn.icon-icons.com/icons2/2131/PNG/512/back_arrow_icon_131563.png" 
+                        <Image Source="https://cdn.icon-icons.com/icons2/2131/PNG/512/back_arrow_icon_131563.png"
                                HorizontalOptions="Center"
                                VerticalOptions="Center"
-                               HeightRequest="25" 
+                               HeightRequest="25"
                                WidthRequest="25" />
                     </Frame>
 
-                    <Label Text="Productos" FontSize="32" Padding="0,0,30,0" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="#ff6d00" Grid.Column="1"/>
+                    <Label Text="Productos" FontSize="32" Padding="0,0,0,0" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="#ff6d00" Grid.Column="1" />
                 </Grid>
             </Frame>
 
-            <!-- Botón Siguiente centrado y al final de la pantalla -->
-            <Frame CornerRadius="25" 
-                   Padding="60,10" 
-                   BackgroundColor="#ff6d00" 
+            <ScrollView Orientation="Horizontal">
+                <ListView x:Name="CartListView" HasUnevenRows="True" Margin="0" VerticalOptions="FillAndExpand">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid Padding="10" ColumnSpacing="10" RowSpacing="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition Width="80" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="50" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackLayout VerticalOptions="Center" HorizontalOptions="Start" Grid.Column="0" Orientation="Vertical">
+                                        <Button Text="▲" Clicked="OnIncreaseClicked" />
+                                        <Label Text="{Binding Amount}" VerticalOptions="Center" HorizontalOptions="Center" />
+                                        <Button Text="▼" Clicked="OnDecreaseClicked" />
+                                    </StackLayout>
+
+                                    <Image Source="{Binding Image}" WidthRequest="80" HeightRequest="80" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1" />
+
+                                    <StackLayout VerticalOptions="Center" HorizontalOptions="Start" Grid.Column="2">
+                                        <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="18" />
+                                        <Label Text="{Binding Price, StringFormat='{0:C}'}" FontSize="16" />
+                                    </StackLayout>
+
+                                    <Button Text="X" Clicked="OnRemoveClicked" VerticalOptions="Center" HorizontalOptions="End" Grid.Column="3" />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+
+            <Frame CornerRadius="25"
+                   Padding="60,10"
+                   BackgroundColor="#ff6d00"
                    AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                    AbsoluteLayout.LayoutBounds="0.5, 0.93, 0.8, AutoSize">
                 <Grid>
@@ -39,13 +72,12 @@
                            VerticalOptions="Center"
                            TextColor="White"
                            FontSize="22"
-                           FontAttributes="Bold"/>
+                           FontAttributes="Bold" />
                 </Grid>
                 <Frame.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnNextTapped"/>
+                    <TapGestureRecognizer Tapped="OnNextTapped" />
                 </Frame.GestureRecognizers>
             </Frame>
         </StackLayout>
     </AbsoluteLayout>
-
 </ContentPage>

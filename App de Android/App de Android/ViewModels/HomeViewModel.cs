@@ -10,6 +10,8 @@ using Xamarin.Forms;
 using App_de_Android.Views;
 using System.Windows.Input;
 using System.Linq;
+using System.Net.Http.Headers;
+using Xamarin.Essentials;
 
 public class HomeViewModel : INotifyPropertyChanged
 {
@@ -21,6 +23,7 @@ public class HomeViewModel : INotifyPropertyChanged
     public ICommand NavigateToFilteredCategoriesCommand { get; private set; }
     public ICommand NavigateToProductsCommand { get; private set; }
     public ICommand NavigateToAddressCommand { get; private set; }
+    public ICommand AddToCartCommand { get; private set; } // Command to add product to cart
 
     private bool _isLoading; // Loading state
 
@@ -66,9 +69,10 @@ public class HomeViewModel : INotifyPropertyChanged
         LoadProducts(); // Load products from API
         LoadCategories(); // Load categories from API
         NavigateToCategoriesCommand = new Command(NavigateToCategories); // Command to navigate to categories view
-        NavigateToFilteredCategoriesCommand = new Command<string>(NavigateToFilteredCategories); // Command to navigate to filtered categories view*
+        NavigateToFilteredCategoriesCommand = new Command<string>(NavigateToFilteredCategories); // Command to navigate to filtered categories view
         NavigateToProductsCommand = new Command(NavigateToProducts); // Command to navigate to products view
         NavigateToAddressCommand = new Command(NavigateToAdress); // Command to navigate to address view
+        AddToCartCommand = new Command<string>(async (productId) => await AddToCart(productId, 1)); // Command to add product to cart
     }
 
     // Navigate to Categories view
@@ -96,6 +100,7 @@ public class HomeViewModel : INotifyPropertyChanged
 
         Application.Current.MainPage.Navigation.PushAsync(filteredCategoriesPage);
     }
+
     private void NavigateToAdress()
     {
         Application.Current.MainPage.Navigation.PushAsync(new AddressListView());
@@ -151,6 +156,35 @@ public class HomeViewModel : INotifyPropertyChanged
         finally
         {
             IsLoading = false;
+        }
+    }
+
+    // Add product to cart
+    private async Task AddToCart(string productId, int amount)
+    {
+        if (string.IsNullOrEmpty(productId))
+        {
+            Console.WriteLine("Error: productId is null or empty"); // Log error if productId is null or empty
+            return;
+        }
+
+        var token = await SecureStorage.GetAsync("authToken");
+        if (token != null)
+        {
+            using (var client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                var url = $"https://myowndomain.lol:5001/api/cart/add?productId={productId}&amount={amount}";
+                Console.WriteLine($"AddToCart URL: {url}"); // Log the URL for debugging
+                var response = await client.PostAsync(url, null);
+                Console.WriteLine($"AddToCart response: {response.StatusCode}");
+                var responseContent = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"AddToCart response content: {responseContent}");
+            }
+        }
+        else
+        {
+            await Application.Current.MainPage.DisplayAlert("Error", "Authentication token not found", "OK");
         }
     }
 

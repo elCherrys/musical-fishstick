@@ -2,11 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_de_Android.Views.PopularProducts">
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid Padding="10">
+            <CollectionView ItemsSource="{Binding Products}">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="2" HorizontalItemSpacing="10" VerticalItemSpacing="10"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Margin="5" Padding="10" HasShadow="False" CornerRadius="10" WidthRequest="150">
+                            <StackLayout Orientation="Vertical" Padding="10">
+                                <Image Source="{Binding Image}" WidthRequest="100" HeightRequest="100" />
+                                <Label Text="{Binding Name}" FontSize="16" FontAttributes="Bold" TextColor="Black"/>
+                                <Label Text="{Binding Description}" FontSize="12" TextColor="Gray"/>
+                                <Label Text="{Binding Price, StringFormat='{0:C}'}" FontSize="14" TextColor="Green"/>
+                                <Button Text="+" Clicked="OnAddToCartClicked" CommandParameter="{Binding Id}" />
+                            </StackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

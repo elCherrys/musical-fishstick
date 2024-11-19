@@ -7,6 +7,7 @@ namespace App_de_Android.Models
 {
     public class ProductsModel
     {
+        public string Id { get; set; } // Added Id property
         public string name { get; set; }
         public string description { get; set; }
         public string price { get; set; }

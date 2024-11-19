@@ -9,6 +9,8 @@ using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using System.Linq;
 using System.Windows.Input;
+using System.Net.Http.Headers;
+using Xamarin.Essentials;
 
 public class FilteredCategoriesViewModel : INotifyPropertyChanged
 {
@@ -49,11 +51,13 @@ public class FilteredCategoriesViewModel : INotifyPropertyChanged
 
     // Command to handle category selection
     public ICommand SelectCategoryCommand { get; private set; }
+    public ICommand AddToCartCommand { get; private set; } // Command to add product to cart
 
     // Constructor
     public FilteredCategoriesViewModel()
     {
         SelectCategoryCommand = new Command<CategoriesModel>(SelectCategory);
+        AddToCartCommand = new Command<string>(async (productId) => await AddToCart(productId, 1)); // Command to add product to cart
         LoadProducts(); // Load products from API
     }
 
@@ -89,10 +93,15 @@ public class FilteredCategoriesViewModel : INotifyPropertyChanged
             {
                 string apiUrl = "https://myowndomain.lol:5001/api/product/get"; // Your API URL
                 var response = await httpClient.GetStringAsync(apiUrl);
-                Products = JsonConvert.DeserializeObject<ObservableCollection<ProductsModel>>(response);
+                var products = JsonConvert.DeserializeObject<ObservableCollection<ProductsModel>>(response);
 
-                // Set categoryName to "Fruit" for all products
+                foreach (var product in products)
+                {
+                    product.Id = product.Id; // Ensure the Id field is used from the document
+                    Console.WriteLine($"Product loaded: {product.Id} - {product.name}");
+                }
 
+                Products = products;
                 FilterProductsByCategory(); // Ensure the filtering happens
             }
         }
@@ -101,7 +110,6 @@ public class FilteredCategoriesViewModel : INotifyPropertyChanged
             Console.WriteLine("Error fetching products: " + ex.Message); // Handle any exceptions
         }
     }
-
 
     // Handle category selection
     private void SelectCategory(CategoriesModel category)
@@ -114,7 +122,6 @@ public class FilteredCategoriesViewModel : INotifyPropertyChanged
         SelectedCategory = category;
     }
 
-
     // Filter products based on selected category
     private void FilterProductsByCategory()
     {
@@ -125,6 +132,34 @@ public class FilteredCategoriesViewModel : INotifyPropertyChanged
         }
     }
 
+    // Add product to cart
+    private async Task AddToCart(string productId, int amount)
+    {
+        if (string.IsNullOrEmpty(productId))
+        {
+            Console.WriteLine("Error: productId is null or empty"); // Log error if productId is null or empty
+            return;
+        }
+
+        var token = await SecureStorage.GetAsync("authToken");
+        if (token != null)
+        {
+            using (var client = new HttpClient())
+            {
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                var url = $"https://myowndomain.lol:5001/api/cart/add?productId={productId}&amount={amount}";
+                Console.WriteLine($"AddToCart URL: {url}"); // Log the URL for debugging
+                var response = await client.PostAsync(url, null);
+                Console.WriteLine($"AddToCart response: {response.StatusCode}");
+                var responseContent = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"AddToCart response content: {responseContent}");
+            }
+        }
+        else
+        {
+            await Application.Current.MainPage.DisplayAlert("Error", "Authentication token not found", "OK");
+        }
+    }
 
     // Notify property changed
     protected virtual void OnPropertyChanged(string propertyName)
