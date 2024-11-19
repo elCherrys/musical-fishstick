@@ -3,8 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App_de_Android.Views.DeliveryOrPickupScreen">
     <AbsoluteLayout>
-        <StackLayout Spacing="0" Padding="20,0" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1">
-            <Label Text="Metodo de recoger" FontSize="32" Padding="0,20,0,0" FontAttributes="Bold" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" TextColor="#ff6d00"/>
+        <StackLayout Spacing="0" Padding="20,0" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" VerticalOptions="Start">
+            <Label Text="Compra realizada" FontSize="32" Padding="0,20,0,0" FontAttributes="Bold" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" TextColor="#ff6d00"/>
+
+            <!-- Imagen grande en el centro -->
+            <Image Source="https://cdn.icon-icons.com/icons2/927/PNG/512/Line_ui_icons_Svg-10_icon-icons.com_72171.png" 
+                   HeightRequest="200" 
+                   WidthRequest="200" 
+                   HorizontalOptions="Center" 
+                   Margin= "0,50,0,0"/>
+
+            <!-- Texto "Contáctanos" -->
+            <Label Text="Vuelve pronto!" 
+                   FontSize="34" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" 
+                   TextColor="#6D3805" />
         </StackLayout>
     </AbsoluteLayout>
 </ContentPage>
