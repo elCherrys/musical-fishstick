@@ -45,8 +45,8 @@
                         <Image Source="https://cdn.icon-icons.com/icons2/911/PNG/512/user-profile_icon-icons.com_71302.png" HeightRequest="100" WidthRequest="100" Grid.Column="0" VerticalOptions="Center" Margin="13,0,0,0"/>
 
                         <StackLayout Grid.Column="1" Spacing="0" VerticalOptions="CenterAndExpand">
-                            <Label Text="Nombre" FontSize="23" TextColor="#6D3805" FontAttributes="Bold" />
-                            <Label Text="Fernando" FontSize="15" TextColor="#FF7220" FontAttributes="Bold" />
+                            <Label Text="Username" FontSize="23" TextColor="#6D3805" FontAttributes="Bold" />
+                            <Label Text="Chavez" FontSize="15" TextColor="#FF7220" FontAttributes="Bold" />
                         </StackLayout>
                     </Grid>
                 </Frame>

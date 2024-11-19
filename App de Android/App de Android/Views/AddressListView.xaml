@@ -5,24 +5,71 @@
              x:Class="App_de_Android.Views.AddressListView"
              x:Name="AddressListPage">
     <ContentPage.Content>
-        <StackLayout Padding="20">
-            <Label Text="Tus Direcciones" FontSize="Large" HorizontalOptions="Center" />
-            <ListView x:Name="AddressListViewControl" ItemsSource="{Binding Addresses}">
+        <StackLayout Padding="20" Spacing="10" VerticalOptions="Start">
+            <Frame VerticalOptions="Center" Padding="0,0,0,20" BorderColor="Transparent" Background="Transparent">
+                <Grid ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Frame BorderColor="Transparent" BackgroundColor="Transparent" Grid.Column="0" Padding="0" HasShadow="False" >
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnBackButtonClicked" />
+                        </Frame.GestureRecognizers>
+                        <Image Source="https://cdn.icon-icons.com/icons2/2131/PNG/512/back_arrow_icon_131563.png" 
+                               HorizontalOptions="Start"
+                               VerticalOptions="Center"
+                               HeightRequest="25" 
+                               WidthRequest="25"
+                               Margin="0,9,0,0"/>
+                    </Frame>
+
+                    <Label Text="Direcciones" FontSize="32" Padding="0,0,30,0" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="#6D3805" Grid.Column="1"/>
+                </Grid>
+            </Frame>
+
+            <ListView x:Name="AddressListViewControl" ItemsSource="{Binding Addresses}" HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout>
-                                <Label Text="{Binding Street}" FontAttributes="Bold"/>
-                                <Label Text="{Binding Number}" FontAttributes="Bold"/>
-                                <Label Text="{Binding Neighborhood}" FontAttributes="Bold"/>
-                                <Label Text="{Binding City}" FontAttributes="Bold"/>
-                                <Label Text="{Binding State}" FontAttributes="Bold"/>
-                            </StackLayout>
+                            <Frame Margin="10,5" Padding="10" CornerRadius="10" BackgroundColor="White" HasShadow="True">
+                                <Grid RowSpacing="5" ColumnSpacing="10">
+                                    <!-- Definimos dos columnas: una para el nombre del campo y otra para el valor -->
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <!-- Nombre del campo -->
+                                        <ColumnDefinition Width="*" />
+                                        <!-- Valor -->
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- Calle -->
+                                    <Label Text="Calle:" FontAttributes="Bold" FontSize="16" Grid.Row="0" Grid.Column="0" />
+                                    <Label Text="{Binding Street}" FontSize="16" Grid.Row="0" Grid.Column="1" />
+
+                                    <!-- Número -->
+                                    <Label Text="Número:" FontAttributes="Bold" FontSize="16" Grid.Row="1" Grid.Column="0" />
+                                    <Label Text="{Binding Number}" FontSize="16" Grid.Row="1" Grid.Column="1" />
+
+                                    <!-- Colonia -->
+                                    <Label Text="Colonia:" FontAttributes="Bold" FontSize="16" Grid.Row="2" Grid.Column="0" />
+                                    <Label Text="{Binding Neighborhood}" FontSize="16" Grid.Row="2" Grid.Column="1" />
+
+                                    <!-- Ciudad -->
+                                    <Label Text="Ciudad:" FontAttributes="Bold" FontSize="16" Grid.Row="3" Grid.Column="0" />
+                                    <Label Text="{Binding City}" FontSize="16" Grid.Row="3" Grid.Column="1" />
+
+                                    <!-- Estado -->
+                                    <Label Text="Estado:" FontAttributes="Bold" FontSize="16" Grid.Row="4" Grid.Column="0" />
+                                    <Label Text="{Binding State}" FontSize="16" Grid.Row="4" Grid.Column="1" />
+                                </Grid>
+                            </Frame>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button Text="+" Command="{Binding AddAddressCommand}" HorizontalOptions="End" />
+
+            <Button Text="+" FontSize="30" WidthRequest="60" CornerRadius="50" Command="{Binding AddAddressCommand}" HorizontalOptions="End" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

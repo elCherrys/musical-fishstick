@@ -21,10 +21,10 @@ namespace App_de_Android.Views
             await Navigation.PushAsync(new Cuenta());
         }
 
-        private void Frame2_Tapped(object sender, EventArgs e)
+        private async void Frame2_Tapped(object sender, EventArgs e)
         {
             // Lógica para el marco 2
-            DisplayAlert("Tapped", "Marco 2 fue tocado", "OK");
+            await Navigation.PushAsync(new AddressListView());
         }
 
         private async void Frame3_Tapped(object sender, EventArgs e)

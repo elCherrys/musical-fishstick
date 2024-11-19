@@ -25,15 +25,10 @@
             <!-- Categories Header with View All -->
             <StackLayout Orientation="Horizontal" Padding="10,0,0,15">
                 <Label Text="Categorias" TextColor="Black" FontSize="22" FontAttributes="Bold"/>
-                <Label Text="Ver más" TextColor="#FF7220" FontSize="18" Padding="190,5,0,0" FontAttributes="Bold">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding NavigateToCategoriesCommand}"/>
-                    </Label.GestureRecognizers>
-                </Label>
             </StackLayout>
 
             <!-- Frame for Categories CollectionView -->
-            <Frame BackgroundColor="White" HeightRequest="140" HasShadow="False" Padding="0,0,0,30">
+            <Frame BackgroundColor="White" HeightRequest="140" HasShadow="False" Padding="10,0,0,30">
                 <CollectionView ItemsSource="{Binding Categories}">
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout Orientation="Horizontal" ItemSpacing="10"/>
@@ -49,7 +44,7 @@
                                     <Image Source="{Binding IconUrl}"/>
                                 </Frame>
                                 <!-- Category name label -->
-                                <Label Text="{Binding Name}" HorizontalOptions="Center" TextColor="Black"/>
+                                <Label Text="{Binding Name}" HorizontalOptions="Center" TextColor="#6D3805" FontAttributes="Bold"/>
                             </StackLayout>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
@@ -59,28 +54,47 @@
             <!-- Products Header with View All -->
             <StackLayout Orientation="Horizontal" Padding="10,0,0,15">
                 <Label Text="Productos Porpulares" TextColor="Black" FontSize="22" FontAttributes="Bold"/>
-                <Label Text="Ver más" TextColor="#FF7220" FontSize="18" Padding="90,5,0,0" FontAttributes="Bold">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding NavigateToProductsCommand}"/>
-                    </Label.GestureRecognizers>
-                </Label>
             </StackLayout>
 
             <!-- Frame for Products CollectionView -->
-            <Frame Margin="0" Padding="10" HasShadow="False" CornerRadius="10" BackgroundColor="White" HeightRequest="250">
+            <Frame Margin="0" Padding="10" HasShadow="False" CornerRadius="10" BackgroundColor="White" HeightRequest="220">
                 <CollectionView ItemsSource="{Binding Products}">
                     <CollectionView.ItemsLayout>
                         <GridItemsLayout Orientation="Horizontal" Span="1" HorizontalItemSpacing="10" VerticalItemSpacing="10"/>
                     </CollectionView.ItemsLayout>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <Frame Margin="5" Padding="10" HasShadow="True" CornerRadius="10" WidthRequest="150" BorderColor="Gray">
+                            <Frame Margin="5" Padding="0,10,0,0" HasShadow="True" CornerRadius="10" WidthRequest="150" BorderColor="Gray">
                                 <StackLayout Orientation="Vertical" Padding="10">
                                     <Image Source="{Binding image}" WidthRequest="100" HeightRequest="100" />
-                                    <Label Text="{Binding name}" FontSize="16" FontAttributes="Bold" TextColor="Black"/>
-                                    <Label Text="{Binding description}" FontSize="12" TextColor="Gray"/>
-                                    <Label Text="{Binding price, StringFormat='{0:C}'}" FontSize="14" TextColor="Green"/>
-                                    <Button Text="+" Command="{Binding Source={x:Reference HomePage}, Path=BindingContext.AddToCartCommand}" CommandParameter="{Binding Id}" />
+                                    <Label Text="{Binding name}" FontSize="16" FontAttributes="Bold" TextColor="#6D3805"/>
+                                    <!-- Línea para el precio y el botón -->
+                                    <Grid ColumnSpacing="10" Padding="0,10,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <!-- Precio -->
+                                        <Label Text="{Binding price, StringFormat='$ {0:F2}'}" 
+                                               FontSize="22" 
+                                               TextColor="#FF5E00" 
+                                               FontAttributes="Bold" 
+                                               Grid.Column="0" 
+                                               VerticalOptions="Center" />
+                                        <!-- Botón -->
+                                        <Button Text="+" 
+                                                Command="{Binding Source={x:Reference HomePage}, Path=BindingContext.AddToCartCommand}" 
+                                                CommandParameter="{Binding Id}" 
+                                                BackgroundColor="Green" 
+                                                TextColor="White" 
+                                                CornerRadius="20" 
+                                                WidthRequest="40" 
+                                                HeightRequest="40" 
+                                                FontAttributes="Bold"
+                                                Grid.Column="1" 
+                                                VerticalOptions="Center" 
+                                                HorizontalOptions="End" />
+                                    </Grid>
                                 </StackLayout>
                             </Frame>
                         </DataTemplate>

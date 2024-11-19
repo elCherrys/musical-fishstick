@@ -39,13 +39,13 @@ namespace App_de_Android.Views
             // Display success or error message
             if (success)
             {
-                await DisplayAlert("Success", "Address added successfully!", "OK");
+                await DisplayAlert("Exitoso", "Dirección agregada con éxito!", "OK");
                 // Optionally add the new address to the collection
                 _addresses.Add(addressModel);
             }
             else
             {
-                await DisplayAlert("Error", "Failed to add address.", "OK");
+                await DisplayAlert("Error", "No se pudo agregar la dirección.", "OK");
             }
 
             await Navigation.PopModalAsync();

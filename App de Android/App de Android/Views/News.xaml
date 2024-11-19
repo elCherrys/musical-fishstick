@@ -19,10 +19,10 @@
                             <TapGestureRecognizer Tapped="OnBackButtonClicked" />
                         </Frame.GestureRecognizers>
                         <Image Source="https://cdn.icon-icons.com/icons2/2131/PNG/512/back_arrow_icon_131563.png" 
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   HeightRequest="25" 
-                   WidthRequest="25" />
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               HeightRequest="25" 
+                               WidthRequest="25" />
                     </Frame>
 
                     <Label Text="Noticias" FontSize="32" Padding="0,0,30,0" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="#ff6d00" Grid.Column="1"/>

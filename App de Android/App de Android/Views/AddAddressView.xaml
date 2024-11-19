@@ -5,12 +5,12 @@
              Title="Add Address">
     <ContentPage.Content>
         <StackLayout Padding="20">
-            <Entry x:Name="StreetEntry" Placeholder="Street" />
-            <Entry x:Name="NumberEntry" Placeholder="Number" />
-            <Entry x:Name="NeighborhoodEntry" Placeholder="Neighborhood" />
-            <Entry x:Name="CityEntry" Placeholder="City" />
-            <Entry x:Name="StateEntry" Placeholder="State" />
-            <Button Text="Add Address" Clicked="OnAddAddressButtonClicked" />
+            <Entry x:Name="StreetEntry" Placeholder="Calle" />
+            <Entry x:Name="NumberEntry" Placeholder="Número" />
+            <Entry x:Name="NeighborhoodEntry" Placeholder="Colonia" />
+            <Entry x:Name="CityEntry" Placeholder="Ciudad" />
+            <Entry x:Name="StateEntry" Placeholder="Estado" />
+            <Button Text="Agregar Direccion" Clicked="OnAddAddressButtonClicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

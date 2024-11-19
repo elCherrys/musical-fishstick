@@ -37,7 +37,7 @@
                     <!-- Columna para el texto -->
                 </Grid.ColumnDefinitions>
                 <Image Source="https://cdn.icon-icons.com/icons2/3066/PNG/512/user_person_profile_avatar_icon_190943.png" HeightRequest="50" WidthRequest="50" Grid.Column="0" VerticalOptions="Center" />
-                <Label Text="USERNAME" Grid.Column="1" VerticalTextAlignment="Center" FontSize="30" TextColor="White" FontAttributes="Bold"/>
+                <Label Text="Chavez" Grid.Column="1" VerticalTextAlignment="Center" FontSize="30" TextColor="White" FontAttributes="Bold"/>
             </Grid>
         </Frame>
 
